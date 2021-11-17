@@ -10,12 +10,12 @@ Account types are ‘Savings’, ‘Current’, and ‘BasicSavings’. A single
 
 The API spec follows: (All amounts in the API are in paisa)
 
-Input (JSON)
+**Input (JSON)**
 * fromAccountId
 * toAccountId
 * amount
 
-Output (JSON)
+**Output (JSON)**
 success case:
 * newSrcBalance: The balance in the source account after the transfer
 * totalDestBalance: The total balance in all accounts of destination user combined
@@ -25,7 +25,7 @@ failure case:
 * errorCode
 * errorMessage
 
-Any language, framework, and database would do. Our preference would be Node.js since it is most commonly used across our tech stacks, but it is not mandatory
+**Any language, framework, and database would do. Our preference would be Node.js since it is most commonly used across our tech stacks, but it is not mandatory**
 
 ### Deliverables
 - Create a fork of this repository
