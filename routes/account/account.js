@@ -3,8 +3,11 @@ const express = require("express");
 const { Op } = require("sequelize");
 const router = express.Router();
 const _ = require("lodash");
-const moment = require("moment");
 const { Account, Transactions, User } = require("../../Models/Model");
+const {
+  validateAccountTransfer_req,
+  validateCashTransfer_req,
+} = require("../../Models/accounts");
 
 const AccoutData = [
   { user_id: 1, account_type: "Savings", balance: 10010, isactive: true },
@@ -89,9 +92,14 @@ router.get("/accountsOfUser", async (request, response, next) => {
 
 //Transfer money from one account to another
 router.put("/tranferMoney", async (request, response, next) => {
-  const fromAccountId = parseInt(request.body.fromAccountId);
-  const toAccountId = parseInt(request.body.toAccountId);
-  const amount = parseInt(request.body.amount);
+  let transferinfo = request.body;
+  let { error } = await validateAccountTransfer_req(transferinfo);
+  if (error)
+    return response.status(400).json({ message: error.details[0].message });
+
+  const fromAccountId = parseInt(transferinfo.fromAccountId);
+  const toAccountId = parseInt(transferinfo.toAccountId);
+  const amount = parseInt(transferinfo.amount);
   let newBalance = 0,
     totalBalanceofUser = 0;
 
@@ -116,6 +124,11 @@ router.put("/tranferMoney", async (request, response, next) => {
     ],
     where: { account_id: toAccountId },
   });
+
+  if (!ToAccount || !FromAccount)
+    return response
+      .status(200)
+      .json({ errorCode: 204, errorMessage: "Account not found" });
 
   newBalance = parseInt(ToAccount.balance) + amount;
   if (FromAccount.balance < amount)
@@ -163,8 +176,13 @@ router.put("/tranferMoney", async (request, response, next) => {
 
 //Deposite money to an account
 router.put("/deposite", async (request, response, next) => {
-  const toAccountId = parseInt(request.body.toAccountId);
-  const amount = parseInt(request.body.amount);
+  let depositeInfo = request.body;
+  let { error } = await validateCashTransfer_req(depositeInfo);
+  if (error)
+    return response.status(400).json({ message: error.details[0].message });
+
+  const toAccountId = parseInt(depositeInfo.toAccountId);
+  const amount = parseInt(depositeInfo.amount);
   let newBalance = 0;
 
   const ToAccount = await Account.findOne({
@@ -177,6 +195,11 @@ router.put("/deposite", async (request, response, next) => {
     ],
     where: { account_id: toAccountId },
   });
+
+  if (!ToAccount)
+    return response
+      .status(200)
+      .json({ errorCode: 204, errorMessage: "Account not found" });
 
   newBalance = parseInt(ToAccount.balance) + amount;
   if (ToAccount.account_type === "BasicSavings")

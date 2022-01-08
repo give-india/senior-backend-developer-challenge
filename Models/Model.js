@@ -1,6 +1,6 @@
 const sequelize = require("../db");
 const User = require("./users");
-const Account = require("./accounts");
+const { Account } = require("./accounts");
 const Transactions = require("./transactions");
 
 User.hasMany(Account, {

@@ -1,5 +1,7 @@
 const Sequelize = require("sequelize");
 const sequelize = require("../db.js");
+const Joi = require("joi");
+
 const Account = sequelize.define("accounts", {
   account_id: {
     type: Sequelize.BIGINT,
@@ -25,4 +27,27 @@ const Account = sequelize.define("accounts", {
   },
 });
 
-module.exports = Account;
+function validateAccountTransfer_req(data) {
+  const schema = Joi.object({
+    fromAccountId: Joi.number().min(1).required(),
+    toAccountId: Joi.number().min(1).required(),
+    amount: Joi.number().min(1).required(),
+  });
+
+  return schema.validate(data);
+}
+
+function validateCashTransfer_req(data) {
+  const schema = Joi.object({
+    toAccountId: Joi.number().min(1).required(),
+    amount: Joi.number().min(1).required(),
+  });
+
+  return schema.validate(data);
+}
+
+module.exports = {
+  Account,
+  validateAccountTransfer_req,
+  validateCashTransfer_req,
+};
