@@ -1,0 +1,33 @@
+{
+  "name": "senior-backend-developer-challenge",
+  "version": "1.0.0",
+  "description": "REST-based API that enables the transfer of money from one bank account to another.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kishanmaxx/senior-backend-developer-challenge.git"
+  },
+  "keywords": [
+    "Assignment"
+  ],
+  "author": "Kishan Shetty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kishanmaxx/senior-backend-developer-challenge/issues"
+  },
+  "homepage": "https://github.com/kishanmaxx/senior-backend-developer-challenge#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.17.3",
+    "express-validator": "^6.14.0",
+    "mongodb": "^4.5.0",
+    "mongoose": "^6.2.10"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
