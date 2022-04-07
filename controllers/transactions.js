@@ -49,8 +49,8 @@ exports.putAccount=(req,res,next)=>{
                         totalAmount+=docArray[i].balance;
                     }
                     return res.status(200).json({
-                        newSrcBalance:`₹${destinationBal}`,
-                        totalDestBalance:`₹${totalAmount}`,
+                        newSrcBalance:destinationBal,
+                        totalDestBalance:totalAmount,
                         transferedAt:desAccount.updatedAt
                     });
                 }).catch();
