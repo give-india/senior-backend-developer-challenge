@@ -1,3 +1,50 @@
+Please run the below script in mysql
+src\main\resources\data.sql #it will setup the initial data
+
+Java should be installed, then run the
+java -jar ./target/bankapp-0.0.1-SNAPSHOT.jar
+
+We can access the below endpoints such as
+
+
+To add new user/customer
+Post: http://localhost:8090/customer/add
+payload:
+{
+    "customerName": "Sachin",
+    "phone": "123456"
+}
+
+To get the customer
+GET: http://localhost:8090/customer/{customerId}
+
+
+To add the new account
+POST: http://localhost:8090/account/add
+{
+    "customerId": 6,
+    "balance": 50,
+    "accountType": "BASIC_SAVINGS"
+}
+
+To get the account
+GET: http://localhost:8090/account/5
+
+To deposit amount in an account
+http://localhost:8090/account/{accountId}/deposit/amount
+PUT: http://localhost:8090/account/3/deposit/3000
+
+
+To transfer amount from once account to another
+PUT: http://localhost:8090/account/transfer
+payload: 
+{
+    "fromAccountId": 5,
+    "toAccountId": 3,
+    "amount": 60
+}
+
+
 ## Backend Developer at Give
 
 ### Objective
