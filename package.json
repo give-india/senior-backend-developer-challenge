@@ -1,0 +1,27 @@
+{
+  "name": "senior-backend-developer-challenge",
+  "version": "1.0.0",
+  "description": "Giveindia codding challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Krrish92/senior-backend-developer-challenge.git"
+  },
+  "keywords": [
+    "Giveindia",
+    "coding",
+    "challenege",
+    "senior",
+    "backend",
+    "engineer"
+  ],
+  "author": "Krishan Kumar Yadav <dev.krrish92@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Krrish92/senior-backend-developer-challenge/issues"
+  },
+  "homepage": "https://github.com/Krrish92/senior-backend-developer-challenge#readme"
+}
