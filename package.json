@@ -4,7 +4,8 @@
   "description": "Giveindia codding challenge",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "start": "node -r esm index.js --inspect"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/Krrish92/senior-backend-developer-challenge/issues"
   },
-  "homepage": "https://github.com/Krrish92/senior-backend-developer-challenge#readme"
+  "homepage": "https://github.com/Krrish92/senior-backend-developer-challenge#readme",
+  "dependencies": {
+    "esm": "^3.2.25"
+  }
 }

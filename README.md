@@ -1,19 +1,28 @@
 ## Backend Developer at Give
+Hi, This is recruitment assesment. I, Krishan Kumar Yadav has completed task following the instructions given. For more details that may easy your recruitment process, Please my resume below-
 
-### Objective
-Write a REST-based API that enables the transfer of money from one bank account to another.
+[Resume](https://drive.google.com/file/d/1yK2qFoSX6qm5-OUuDmhahulClIuOhPGA/view?usp=sharing)
 
-Account types are ‘Savings’, ‘Current’, and ‘BasicSavings’. A single user can have multiple such accounts. The following rules apply:
-* Transfer between accounts belonging to the same user is not allowed.
-* The balance in the ‘BasicSavings’ account type should never exceed Rs. 50,000
-* Source account should have the required amount for the transaction to succeed
+### Prerequisites
+- Node 12.x or above
+- curl
 
-The API spec follows: (All amounts in the API are in paisa)
+
+### Setup instructions
+- Clone the git [repo](https://github.com/Krrish92/senior-backend-developer-challenge)
+- Open project directory (senior-backend-developer-challenge) in terminal/cmd
+- Run ```npm install```.
+- Run ```npm start```.
+
+Thats all. Great you have setup the project :) .
+
+### Test Instructions
 
 **Input (JSON)**
 * fromAccountId
 * toAccountId
 * amount
+* pin (I added this only for authorization.)
 
 **Output (JSON)**
 success case:
@@ -25,11 +34,146 @@ failure case:
 * errorCode
 * errorMessage
 
-**Any language, framework, and database would do. Our preference would be Node.js since it is most commonly used across our tech stacks, but it is not mandatory**
+**Test1: Invalid request, i.e missing required params**
+* Run below curl command
+```
+curl --location --request POST 'http://localhost:8000/send-money' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "fromAccount": "10101010101",
+    "toAccount": "60606060606",
+    "amount": 5000
+}'
+```
 
-### Deliverables
-- Create a fork of this repository
-- Include instructions on how to set it up and run in the README.md
-- Please provide instructions on how to run it in the README.md. Include some sample users/accounts data to test for various scenarios. Around 10 or so sample accounts should suffice to cover the scenarios.
-- Add your resume and other profile / project links
-- Submit a pull request (PR)
+**Test2: Unauthorized Access i.e wrong pin for fromAccount**
+```
+curl --location --request POST 'http://localhost:8000/send-money' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "fromAccount": "10101010101",
+    "toAccount": "60606060606",
+    "pin": "0000",
+    "amount": 5000
+}'
+```
+
+**Test3: AccountDoesntExists Exception, i.e one of the accounts is not valid**
+```
+curl --location --request POST 'http://localhost:8000/send-money' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "fromAccount": "10101010111",
+    "toAccount": "60606060606",
+    "pin": "1111",
+    "amount": 5000
+}'
+```
+
+**Test4: Source and target account belongs to single user**
+```
+curl --location --request POST 'http://localhost:8000/send-money' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "fromAccount": "10101010101",
+    "toAccount": "30303030303",
+    "pin": "1111",
+    "amount": 5000
+}'
+```
+
+**Test5: Source account doesnt have sufficient balance**
+```
+curl --location --request POST 'http://localhost:8000/send-money' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "fromAccount": "30303030303",
+    "toAccount": "40404040404",
+    "pin": "3333",
+    "amount": 30000
+}'
+```
+
+**Test6: Basic saving account exceeded limit**
+```
+curl --location --request POST 'http://localhost:8000/send-money' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "fromAccount": "40404040404",
+    "toAccount": "50505050505",
+    "pin": "4444",
+    "amount": 30000
+}'
+```
+
+**Test6: Valid transaction**
+```
+curl --location --request POST 'http://localhost:8000/send-money' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "fromAccount": "40404040404",
+    "toAccount": "50505050505",
+    "pin": "4444",
+    "amount": 1000
+}'
+```
+
+### Data
+I setup only 2 users having 6 accounts 1-1 each account type. All accounts are listed below-
+```
+{
+    '10101010101': {
+        pin: '1111',
+        accountNumber: '10101010101',
+        accountType: 'current',
+        userId: 1,
+        balance: 40000,
+        transactions: []
+    },
+    '20202020202': {
+        pin: '2222',
+        balance: 20000,
+        userId: 2,
+        accountNumber: '20202020202',
+        accountType: 'current',
+        transactions: []
+    },
+    '30303030303': {
+        pin: '3333',
+        balance: 20000,
+        userId: 1,
+        accountNumber: '30303030303',
+        accountType: 'saving',
+        transactions: []
+    },
+    '40404040404': {
+        pin: '4444',
+        balance: 40000,
+        userId: 2,
+        accountNumber: '40404040404',
+        accountType: 'saving',
+        transactions: []
+    },
+    '50505050505': {
+        pin: '5555',
+        balance: 40000,
+        userId: 1,
+        accountNumber: '50505050505',
+        accountType: 'basic_saving',
+        transactions: []
+    },
+    '60606060606': {
+        pin: '6666',
+        balance: 40000,
+        userId: 2,
+        accountNumber: '60606060606',
+        accountType: 'basic_saving',
+        transactions: []
+    }
+}
+```
+
+## Profile overview
+- Please hit ```http://localhost:8000``` in browser to know more about me.
+
+Thats all. Thanks you :)
