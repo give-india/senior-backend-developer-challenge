@@ -1,5 +1,5 @@
 ## Backend Developer at Give
-Hi, This is recruitment assesment. I, Krishan Kumar Yadav has completed task following the instructions given. For more details that may easy your recruitment process, Please my resume below-
+Hi, This is recruitment assessment. I, Krishan Kumar Yadav has completed task following the instructions given. For more details that may easy your recruitment process, Please my resume below-
 
 [Resume](https://drive.google.com/file/d/1yK2qFoSX6qm5-OUuDmhahulClIuOhPGA/view?usp=sharing)
 
