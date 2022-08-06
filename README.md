@@ -1,35 +1,115 @@
-## Backend Developer at Give
+## Bank Account
 
-### Objective
-Write a REST-based API that enables the transfer of money from one bank account to another.
+### Steps to install
+Update mongodb connection string in .env file (if mongodb is running on localhost PORT 27017 no need to edit .env)
 
-Account types are ‘Savings’, ‘Current’, and ‘BasicSavings’. A single user can have multiple such accounts. The following rules apply:
-* Transfer between accounts belonging to the same user is not allowed.
-* The balance in the ‘BasicSavings’ account type should never exceed Rs. 50,000
-* Source account should have the required amount for the transaction to succeed
+* Run `npm install` in root folder of project.
+* Run `npm start` to start the project
+* To test all the API I have included `GiveIndia.postman_collection.json` file in project. Import this file in your postman.
 
-The API spec follows: (All amounts in the API are in paisa)
 
-**Input (JSON)**
-* fromAccountId
-* toAccountId
-* amount
+<h1>Create Sample Account</h1>
 
-**Output (JSON)**
-success case:
-* newSrcBalance: The balance in the source account after the transfer
-* totalDestBalance: The total balance in all accounts of destination user combined
-* transferedAt: timestamp
+<small>API: </small> <b><i>http://localhost:3001/api/createSampleData</i></b>
 
-failure case:
-* errorCode
-* errorMessage
 
-**Any language, framework, and database would do. Our preference would be Node.js since it is most commonly used across our tech stacks, but it is not mandatory**
+<small>Method: </small><b><i>GET</b></i>
 
-### Deliverables
-- Create a fork of this repository
-- Include instructions on how to set it up and run in the README.md
-- Please provide instructions on how to run it in the README.md. Include some sample users/accounts data to test for various scenarios. Around 10 or so sample accounts should suffice to cover the scenarios.
-- Add your resume and other profile / project links
-- Submit a pull request (PR)
+<h1>Create Account</h1>
+
+<small>API:</small> <b><i>http://localhost:3001/api/createAccount</i></b>
+
+<small>Method: </small><b><i>POST</b></i>
+
+<small>Example Payload:</small>
+```json
+{
+    "userId": 300,
+    "balance": 2000,
+    "accountType": "Savings"
+}
+```
+
+<h1>Transfer money</h1>
+
+<small>API:</small> <b><i>http://localhost:3001/api/transfer</i></b>
+
+<small>Method: </small><b><i>POST</b></i>
+
+<small>Example Payload:</small>
+```json
+{
+    "fromAccountId": 50213597,
+    "toAccountId": 50213597,
+    "amount": 100
+}
+```
+
+<h1>Get All Accounts</h1>
+
+<small>API: </small><b><i>http://localhost:3001/api/accounts</i></b>
+
+<small>Method: </small><b><i>GET</b></i>
+
+<h1>Get All Transaction</h1>
+
+<small>API: </small><b><i>http://localhost:3001/api/transactions</i></b>
+
+<small>Method: </small><b><i>GET</b></i>
+
+<h1>Deposit money</h1>
+
+<small>API:</small> <b><i>http://localhost:3001/api/deposit</i></b>
+
+<small>Method: </small><b><i>POST</b></i>
+
+<small>Example Payload:</small>
+```json
+{
+    "accountId": 50213598,
+    "amount": 1000
+}
+```
+
+<h1>Cash Withdrawal</h1>
+
+<small>API:</small> <b><i>http://localhost:3001/api/withdrawal</i></b>
+
+<small>Method: </small><b><i>POST</b></i>
+
+<small>Example Payload:</small>
+```json
+{
+    "accountId": 50213598,
+    "amount": 200
+}
+```
+
+<h1>Get Accouts Details of Individual</h1>
+
+<small>API:</small> <b><i>http://localhost:3001/api/getAccountDetails</i></b>
+
+<small>Method: </small><b><i>POST</b></i>
+
+<small>Example Payload:</small>
+```json
+{
+    "userId": 1
+}
+```
+
+<h1>Get Transaction of an account</h1>
+
+<small>API:</small> <b><i>http://localhost:3001/api/getTransactionOfAccount</i></b>
+
+<small>Method: </small><b><i>POST</b></i>
+
+<small>Example Payload:</small>
+```json
+{
+    "accountId": 50213597,
+    "transfer": true,
+    "deposit": true,
+    "withdrawal": false
+}
+```
