@@ -33,3 +33,8 @@ failure case:
 - Please provide instructions on how to run it in the README.md. Include some sample users/accounts data to test for various scenarios. Around 10 or so sample accounts should suffice to cover the scenarios.
 - Add your resume and other profile / project links
 - Submit a pull request (PR)
+
+## instruction how to setup
+- install node
+- run npm i command
+- run node index.js
