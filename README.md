@@ -38,3 +38,27 @@ failure case:
 - install node
 - run npm i command
 - run node index.js
+
+### sample api data
+1)url:http://localhost:3001/transfer-amount
+payload: {
+    "fromAccountNo": "11111", "toAccountNo":"912345", "ammount":"5000"
+}
+
+2) url: http://localhost:3001/add-account
+payload:{
+        "AccountNo": 12345,
+        "AccountType": "Current",
+        "ifscCode": "00012",
+        "transactionLimit": "50000",
+        "userId": "6338430095af5bbc7d7e012d",
+        "ballance": "1000000"
+    }
+
+3) url:http://localhost:3001/add-ueser
+payload: {
+    "email": "akash@test.com",
+    "userName": "akash",
+    "contactNo": "77777",
+    "address": "test address"
+}
