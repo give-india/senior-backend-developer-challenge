@@ -1,0 +1,54 @@
+{
+  "name": "senior-backend-developer-challenge",
+  "version": "1.0.0",
+  "description": "Write a REST-based API that enables the transfer of money from one bank account to another.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surojitp/senior-backend-developer-challenge.git"
+  },
+  "author": "Surojit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/surojitp/senior-backend-developer-challenge/issues"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.0.0",
+    "helmet": "^4.1.0",
+    "hpp": "^0.2.3",
+    "html-to-text": "^7.0.0",
+    "http-status": "^1.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.4",
+    "mysql2": "^3.1.2",
+    "sequelize": "^6.28.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.7",
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^24.0.1",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-security": "^1.4.0",
+    "faker": "^5.1.0",
+    "husky": "^5.1.2",
+    "jest": "^26.0.1",
+    "lint-staged": "^10.0.7",
+    "node-mocks-http": "^1.8.0",
+    "nodemon": "^2.0.0",
+    "prettier": "^2.0.5",
+    "supertest": "^6.0.1"
+  },
+  "homepage": "https://github.com/surojitp/senior-backend-developer-challenge#readme"
+}
