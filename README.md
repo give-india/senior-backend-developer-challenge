@@ -3,33 +3,21 @@
 ### Objective
 Write a REST-based API that enables the transfer of money from one bank account to another.
 
-Account types are ‘Savings’, ‘Current’, and ‘BasicSavings’. A single user can have multiple such accounts. The following rules apply:
-* Transfer between accounts belonging to the same user is not allowed.
-* The balance in the ‘BasicSavings’ account type should never exceed Rs. 50,000
-* Source account should have the required amount for the transaction to succeed
+System Requirements 
+* NodeJS (My System Version 16.13.2)
+* MySql (My System Version 8.0.32)
 
-The API spec follows: (All amounts in the API are in paisa)
+Steps
+* Clone the pepo.
+* Import tables which is **"DumpDB_MYSQL"** folder
+* Rename **example.env** to **.env**
+* Change your Database credential (If required) in **.env** file
+* Run command **npm install**
+* Run command **npm start**
+* API End point **http://localhost:7000/transfer** Method **POST**
+* Check the **TestCase.docx** file
 
-**Input (JSON)**
-* fromAccountId
-* toAccountId
-* amount
+Find My Latest Resume Inside Repo
 
-**Output (JSON)**
-success case:
-* newSrcBalance: The balance in the source account after the transfer
-* totalDestBalance: The total balance in all accounts of destination user combined
-* transferedAt: timestamp
-
-failure case:
-* errorCode
-* errorMessage
-
-**Any language, framework, and database would do. Our preference would be Node.js since it is most commonly used across our tech stacks, but it is not mandatory**
-
-### Deliverables
-- Create a fork of this repository
-- Include instructions on how to set it up and run in the README.md
-- Please provide instructions on how to run it in the README.md. Include some sample users/accounts data to test for various scenarios. Around 10 or so sample accounts should suffice to cover the scenarios.
-- Add your resume and other profile / project links
-- Submit a pull request (PR)
+Let me know if any issue
+* Email: paul.surojit99@gmail.com
