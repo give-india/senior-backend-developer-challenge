@@ -8,14 +8,10 @@ exports.sendMoney = catchAsync(async (req, res, next) => {
     try{
         const { fromAccountId, toAccountId, amount, fromAccountDetails, toAccountDetails } = req.body || {};
 
-        // CREATE TRANSDACTION INSTANCE AND DO THE TRANSACTION
-        const transactionInstance = new Transaction(fromAccountId, toAccountId, amount, toAccountDetails.userId, fromAccountDetails.userId);
+        // CREATE TRANSACTION INSTANCE AND DO THE TRANSACTION
+        const transactionInstance = Object.freeze(new Transaction(fromAccountId, toAccountId, amount, toAccountDetails.userId, fromAccountDetails.userId));
 
         const  { refNo, createdAt } = await transactionInstance.innitiateTransaction() || {};
-
-        const debit = await transactionInstance.debitFrom();
-
-        const credit = await transactionInstance.creditTo();
 
         const totalDestBalance = await transactionInstance.totalDestBalanceFunc();
 

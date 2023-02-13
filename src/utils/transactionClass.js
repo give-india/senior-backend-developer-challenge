@@ -30,9 +30,13 @@ class TransactionClass{
                     transferToAccount: this.#toAccountId,
                     amount: this.#amount
                   };
-                console.log("transaction", transaction)
+                
                 const transactionData= await Transction.create(transaction);
                 this.#transactionId= transactionData.transactionId;
+
+                const debit = await this.#debitFrom();
+
+                const credit = await this.#creditTo();
                 resolve(transactionData)
             }catch(e){
                 console.log(e);
@@ -41,11 +45,12 @@ class TransactionClass{
             
         })
     }
-    debitFrom() {
+    #debitFrom() {
         return new Promise(async (resolve, reject) => {
             try{
                 const debitInfo= {
                     transactionId: this.#transactionId,
+                    accountId: this.#fromAccountId,
                     amount: this.#amount,
                     ledgerType: 'D'
                 }
@@ -58,11 +63,12 @@ class TransactionClass{
             
         })
     }
-    creditTo() {
+    #creditTo() {
         return new Promise(async (resolve, reject) => {
             try{
                 const creditInfo= {
                     transactionId: this.#transactionId,
+                    accountId: this.#toAccountId,
                     amount: this.#amount,
                     ledgerType: 'C'
                 }

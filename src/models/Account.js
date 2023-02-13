@@ -1,22 +1,23 @@
 module.exports = (sequelize, Sequelize) => {
     const Accounts = sequelize.define("accounts", {
-    accountId: {
+      accountId: {
         type: Sequelize.INTEGER,
         allowNull: false,
         primaryKey: true,
       },
       userId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        allowNull: false,
       },
       accountTypeId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        allowNull: false,
       },
       totalBalance: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        allowNull: false,
       },
-    },{
-        timestamps: false
-      });
+    });
   
     return Accounts;
   };

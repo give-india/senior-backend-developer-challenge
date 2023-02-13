@@ -9,13 +9,18 @@ module.exports = (sequelize, Sequelize) => {
         type: Sequelize.INTEGER,
         allowNull: false
       },
+      accountId: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+      },
       amount: {
         type: Sequelize.INTEGER,
         allowNull: false
       },
       ledgerType: {
         type: Sequelize.ENUM,
-        values: ['C', 'D',]
+        values: ['C', 'D',],
+        allowNull: false
       }
     });
   
