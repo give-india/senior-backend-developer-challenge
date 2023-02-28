@@ -1,0 +1,18 @@
+2023-02-28 11:49:07 error: [POST] /transactions >> StatusCode:: 404, Message:: Authentication token missing
+2023-02-28 11:51:07 error: [POST] /transactions >> StatusCode:: 404, Message:: Authentication token missing
+2023-02-28 11:52:04 error: [POST] /transactions >> StatusCode:: 500, Message:: Insufficient Balance!
+2023-02-28 11:54:17 error: [POST] /transactions >> StatusCode:: 500, Message:: Insufficient Balance!
+2023-02-28 11:56:02 error: [POST] /transactions >> StatusCode:: 401, Message:: Insufficient Balance
+2023-02-28 11:57:04 error: [POST] /transactions >> StatusCode:: 500, Message:: Invalid request
+2023-02-28 11:57:16 error: [POST] /transactions >> StatusCode:: 500, Message:: Invalid request! Cannot transfer to the same user
+2023-02-28 12:10:16 error: [POST] /transactions >> StatusCode:: 500, Message:: Invalid request
+2023-02-28 12:12:14 error: [POST] /transactions >> StatusCode:: 500, Message:: Benificiary account should not have
+2023-02-28 12:12:33 error: [POST] /transactions >> StatusCode:: 500, Message:: Account does not exist
+2023-02-28 12:12:38 error: [POST] /transactions >> StatusCode:: 500, Message:: Benificiary account should not have
+2023-02-28 13:04:51 error: [POST] /signup >> StatusCode:: 409, Message:: This email ramesh@gmail.com already exists
+2023-02-28 13:06:46 error: [POST] /signup >> StatusCode:: 409, Message:: This email ramesh1@gmail.com already exists
+2023-02-28 13:45:03 error: [POST] /transactions >> StatusCode:: 500, Message:: Insufficient Balance
+2023-02-28 13:45:12 error: [POST] /transactions >> StatusCode:: 500, Message:: Problem with your benificiary account type
+2023-02-28 16:37:53 error: [POST] /transactions >> StatusCode:: 401, Message:: Wrong authentication token
+2023-02-28 16:39:58 error: [POST] /transactions >> StatusCode:: 409, Message:: Account doesn't exist
+2023-02-28 16:40:27 error: [POST] /transactions >> StatusCode:: 409, Message:: Account doesn't exist

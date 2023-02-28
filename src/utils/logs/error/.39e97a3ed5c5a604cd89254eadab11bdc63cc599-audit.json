@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/Users/ramesh/Sites/nodejsapps/senior-backend-developer-challenge/src/utils/logs/error/.39e97a3ed5c5a604cd89254eadab11bdc63cc599-audit.json",
+    "files": [
+        {
+            "date": 1677324908893,
+            "name": "/Users/ramesh/Sites/nodejsapps/senior-backend-developer-challenge/src/utils/logs/error/2023-02-25.log",
+            "hash": "b3f6439c6a55ad8f467e721485ea662fdbb43520beb52d7e537b9ed7dcd9877a"
+        },
+        {
+            "date": 1677561396340,
+            "name": "/Users/ramesh/Sites/nodejsapps/senior-backend-developer-challenge/src/utils/logs/error/2023-02-28.log",
+            "hash": "98f7c70b42dd1296e9f46a1279922feb562bf467a011b24c318ec9008ee51bb1"
+        }
+    ],
+    "hashType": "sha256"
+}

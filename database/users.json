@@ -1,0 +1,85 @@
+[{
+  "_id": {
+    "$oid": "63fdb026558420d1e2bd5984"
+  },
+  "first_name": "Ramesh",
+  "last_name": "Thangapandian",
+  "email": "ramesh@gmail.com",
+  "address": "India",
+  "password": "$2b$10$wGQyo8ncY2mxONGCAd2TYuSuaqEqr.rgcPXcepJgBAtfGfBMSlpUy",
+  "balance": 0,
+  "created_at": {
+    "$date": {
+      "$numberLong": "1677570086383"
+    }
+  },
+  "updated_at": {
+    "$date": {
+      "$numberLong": "1677570086383"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63fdb038558420d1e2bd598e"
+  },
+  "first_name": "Suresh",
+  "last_name": "S",
+  "email": "suresh@gmail.com",
+  "address": "India",
+  "password": "$2b$10$s8KDfcQorb2ig9gon2tqHeOgFzn.I5Ua0B/AW4ZZTo1l/JRXelBAa",
+  "balance": 0,
+  "created_at": {
+    "$date": {
+      "$numberLong": "1677570104593"
+    }
+  },
+  "updated_at": {
+    "$date": {
+      "$numberLong": "1677570104593"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63fdb048558420d1e2bd5998"
+  },
+  "first_name": "Rohit",
+  "last_name": "Nair",
+  "email": "rohit@gmail.com",
+  "address": "India",
+  "password": "$2b$10$qp7tILWA5P8uaFbFAb0IF.cvczebDG/YFD1kFh94diP0.x4pXWrci",
+  "balance": 0,
+  "created_at": {
+    "$date": {
+      "$numberLong": "1677570120802"
+    }
+  },
+  "updated_at": {
+    "$date": {
+      "$numberLong": "1677570120802"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63fdb06e558420d1e2bd59a2"
+  },
+  "first_name": "Karthick",
+  "last_name": "Give",
+  "email": "karthick@gmail.com",
+  "address": "India",
+  "password": "$2b$10$IVbZ8A1ygi5OHPng2Lw.n.Trx4TMEqEwjngaSceqNXGmTNP4HCMem",
+  "balance": 0,
+  "created_at": {
+    "$date": {
+      "$numberLong": "1677570158454"
+    }
+  },
+  "updated_at": {
+    "$date": {
+      "$numberLong": "1677570158454"
+    }
+  },
+  "__v": 0
+}]

@@ -1,0 +1,67 @@
+[{
+  "_id": {
+    "$oid": "63fdb8bf4b731071f7ec87e0"
+  },
+  "fromAccount": {
+    "$oid": "63fdb026558420d1e2bd5986"
+  },
+  "toAccount": {
+    "$oid": "63fdb048558420d1e2bd599e"
+  },
+  "amount": 2000,
+  "created_at": {
+    "$date": {
+      "$numberLong": "1677572287478"
+    }
+  },
+  "updated_at": {
+    "$date": {
+      "$numberLong": "1677572287478"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63fde0c07f2fc4c586dd103f"
+  },
+  "fromAccount": {
+    "$oid": "63fdb026558420d1e2bd5986"
+  },
+  "toAccount": {
+    "$oid": "63fdb048558420d1e2bd599e"
+  },
+  "amount": 1000,
+  "created_at": {
+    "$date": {
+      "$numberLong": "1677582528710"
+    }
+  },
+  "updated_at": {
+    "$date": {
+      "$numberLong": "1677582528710"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63fde132db13bb020bba1733"
+  },
+  "fromAccount": {
+    "$oid": "63fdb026558420d1e2bd5986"
+  },
+  "toAccount": {
+    "$oid": "63fdb06e558420d1e2bd59a4"
+  },
+  "amount": 1000,
+  "created_at": {
+    "$date": {
+      "$numberLong": "1677582642159"
+    }
+  },
+  "updated_at": {
+    "$date": {
+      "$numberLong": "1677582642159"
+    }
+  },
+  "__v": 0
+}]

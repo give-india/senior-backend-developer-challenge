@@ -1,0 +1,241 @@
+[{
+  "_id": {
+    "$oid": "63fdb026558420d1e2bd5986"
+  },
+  "userId": {
+    "$oid": "63fdb026558420d1e2bd5984"
+  },
+  "balance": 6000,
+  "accountType": "Savings",
+  "created_at": {
+    "$date": {
+      "$numberLong": "1677570086420"
+    }
+  },
+  "updated_at": {
+    "$date": {
+      "$numberLong": "1677582642149"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63fdb026558420d1e2bd5988"
+  },
+  "userId": {
+    "$oid": "63fdb026558420d1e2bd5984"
+  },
+  "balance": 0,
+  "accountType": "Current",
+  "created_at": {
+    "$date": {
+      "$numberLong": "1677570086450"
+    }
+  },
+  "updated_at": {
+    "$date": {
+      "$numberLong": "1677570086450"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63fdb026558420d1e2bd598a"
+  },
+  "userId": {
+    "$oid": "63fdb026558420d1e2bd5984"
+  },
+  "balance": 50000,
+  "accountType": "BasicSavings",
+  "created_at": {
+    "$date": {
+      "$numberLong": "1677570086454"
+    }
+  },
+  "updated_at": {
+    "$date": {
+      "$numberLong": "1677570086454"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63fdb038558420d1e2bd5990"
+  },
+  "userId": {
+    "$oid": "63fdb038558420d1e2bd598e"
+  },
+  "balance": 20000,
+  "accountType": "Savings",
+  "created_at": {
+    "$date": {
+      "$numberLong": "1677570104597"
+    }
+  },
+  "updated_at": {
+    "$date": {
+      "$numberLong": "1677570104597"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63fdb038558420d1e2bd5992"
+  },
+  "userId": {
+    "$oid": "63fdb038558420d1e2bd598e"
+  },
+  "balance": 0,
+  "accountType": "Current",
+  "created_at": {
+    "$date": {
+      "$numberLong": "1677570104603"
+    }
+  },
+  "updated_at": {
+    "$date": {
+      "$numberLong": "1677570104603"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63fdb038558420d1e2bd5994"
+  },
+  "userId": {
+    "$oid": "63fdb038558420d1e2bd598e"
+  },
+  "balance": 50000,
+  "accountType": "BasicSavings",
+  "created_at": {
+    "$date": {
+      "$numberLong": "1677570104609"
+    }
+  },
+  "updated_at": {
+    "$date": {
+      "$numberLong": "1677570104609"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63fdb048558420d1e2bd599a"
+  },
+  "userId": {
+    "$oid": "63fdb048558420d1e2bd5998"
+  },
+  "balance": 30000,
+  "accountType": "Savings",
+  "created_at": {
+    "$date": {
+      "$numberLong": "1677570120806"
+    }
+  },
+  "updated_at": {
+    "$date": {
+      "$numberLong": "1677570120806"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63fdb048558420d1e2bd599c"
+  },
+  "userId": {
+    "$oid": "63fdb048558420d1e2bd5998"
+  },
+  "balance": 0,
+  "accountType": "Current",
+  "created_at": {
+    "$date": {
+      "$numberLong": "1677570120812"
+    }
+  },
+  "updated_at": {
+    "$date": {
+      "$numberLong": "1677570120812"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63fdb048558420d1e2bd599e"
+  },
+  "userId": {
+    "$oid": "63fdb048558420d1e2bd5998"
+  },
+  "balance": 23000,
+  "accountType": "BasicSavings",
+  "created_at": {
+    "$date": {
+      "$numberLong": "1677570120815"
+    }
+  },
+  "updated_at": {
+    "$date": {
+      "$numberLong": "1677582528688"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63fdb06e558420d1e2bd59a4"
+  },
+  "userId": {
+    "$oid": "63fdb06e558420d1e2bd59a2"
+  },
+  "balance": 1000,
+  "accountType": "Savings",
+  "created_at": {
+    "$date": {
+      "$numberLong": "1677570158461"
+    }
+  },
+  "updated_at": {
+    "$date": {
+      "$numberLong": "1677582642140"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63fdb06e558420d1e2bd59a6"
+  },
+  "userId": {
+    "$oid": "63fdb06e558420d1e2bd59a2"
+  },
+  "balance": 0,
+  "accountType": "Current",
+  "created_at": {
+    "$date": {
+      "$numberLong": "1677570158465"
+    }
+  },
+  "updated_at": {
+    "$date": {
+      "$numberLong": "1677570158465"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63fdb06e558420d1e2bd59a8"
+  },
+  "userId": {
+    "$oid": "63fdb06e558420d1e2bd59a2"
+  },
+  "balance": 50000,
+  "accountType": "BasicSavings",
+  "created_at": {
+    "$date": {
+      "$numberLong": "1677570158471"
+    }
+  },
+  "updated_at": {
+    "$date": {
+      "$numberLong": "1677570158471"
+    }
+  },
+  "__v": 0
+}]
