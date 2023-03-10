@@ -1,35 +1,68 @@
 ## Backend Developer at Give
 
-### Objective
-Write a REST-based API that enables the transfer of money from one bank account to another.
+# Senior Backend Developer Challenge Application
+This Markdown file provides instructions for cloning and running the Senior Backend Developer Challenge application.
 
-Account types are ‘Savings’, ‘Current’, and ‘BasicSavings’. A single user can have multiple such accounts. The following rules apply:
-* Transfer between accounts belonging to the same user is not allowed.
-* The balance in the ‘BasicSavings’ account type should never exceed Rs. 50,000
-* Source account should have the required amount for the transaction to succeed
+## Clone the Repository
+To clone the repository, run the following command in your terminal:
 
-The API spec follows: (All amounts in the API are in paisa)
+```
+git clone https://github.com/jangidprashant92/senior-backend-developer-challenge.git
+```
 
-**Input (JSON)**
-* fromAccountId
-* toAccountId
-* amount
+## Install Dependencies
+After cloning the repository, navigate to the cloned folder:
 
-**Output (JSON)**
-success case:
-* newSrcBalance: The balance in the source account after the transfer
-* totalDestBalance: The total balance in all accounts of destination user combined
-* transferedAt: timestamp
+```
+cd senior-backend-developer-challenge
+```
 
-failure case:
-* errorCode
-* errorMessage
+Then, install the dependencies by running:
 
-**Any language, framework, and database would do. Our preference would be Node.js since it is most commonly used across our tech stacks, but it is not mandatory**
+```
+yarn install
+```
+Run the Server
+To start the server, run:
 
-### Deliverables
-- Create a fork of this repository
-- Include instructions on how to set it up and run in the README.md
-- Please provide instructions on how to run it in the README.md. Include some sample users/accounts data to test for various scenarios. Around 10 or so sample accounts should suffice to cover the scenarios.
-- Add your resume and other profile / project links
-- Submit a pull request (PR)
+```
+yarn dev
+```
+## Accessing the API
+1. The transfer API URL is:
+
+    ```
+    http://localhost:3005/api/transfer
+    ```
+    You can send a transfer request using the following data:
+
+    ```
+    fromAccountId: 1
+    toAccountId: 3
+    amount: 20
+    ```
+
+2. The get account by user id API URL is:
+    ```
+    http://localhost:3005/api/getAccountsByUserId
+    ```
+    You can get user balance by id
+
+    ```
+    userId: 1
+    ```
+
+3. The create account API URL is:
+    ```
+    http://localhost:3005/api/addAccount
+    ```
+    You can create user
+
+    ```
+    userId:3
+    type:Savings
+    balance:5000
+    ```
+
+## Dummy Data
+The dummy data is stored in the `db` folder.
