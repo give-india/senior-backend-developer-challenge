@@ -3,7 +3,7 @@ const {
   singupValidator,
 } = require("../helper/validationHelper.js");
 const User = require("../Models/User.Model");
-// const ErrorHandler = require('../utils/errorHandler')
+
 const ErrorHandler = require("http-errors");
 const bcrypt = require("bcrypt");
 const AccountType = require("../Models/AccountType.Model");
@@ -62,10 +62,6 @@ exports.ctrllogin = trycatchBlock(async (req, res, next) => {
     res.status(200).send({
       status: true,
       token,
-      //   user,
     });
   }
-  // let token = await authloginJwt(req);
-
-  // console.log(token);
 });

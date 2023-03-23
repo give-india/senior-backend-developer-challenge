@@ -1,7 +1,6 @@
 const Account = require("../Models/UserAccountDetail.Model");
 const AccountType = require("../Models/AccountType.Model");
 const User = require("../Models/User.Model");
-// const ErrorHandler = require("../utils/errorHandler");
 const ErrorHandler = require("http-errors");
 const { trycatchBlock } = require("../utils/trycatchblock");
 const { isauthUser } = require("../helper/authHelper");
@@ -126,8 +125,6 @@ exports.ctrlAddBalance = trycatchBlock(async (req, res, next) => {
   if (value.balance <= 99)
     return next(ErrorHandler.UnprocessableEntity("Amount more than 99 paisa."));
 
-  // account.balance += accountType.balance;
-  // await account.save();
   accDetails = new UserAccountDetail({
     userId: id,
     accountTypeId: accountTypeId._id,

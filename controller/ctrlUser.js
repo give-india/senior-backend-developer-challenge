@@ -33,7 +33,6 @@ exports.ctrladdAccount = trycatchBlock(async (req, res, next) => {
     status: true,
     message: "New Account Type successfully Updated",
   });
-  // console.log("user", user);
 });
 
 exports.ctrlUserDetail = trycatchBlock(async (req, res, next) => {
@@ -53,7 +52,6 @@ exports.ctrlUserDetail = trycatchBlock(async (req, res, next) => {
   let accountTypeArr = [];
   await accounttype.forEach((accounttype) => {
     accountTypeArr.push(accounttype.accountType);
-    // console.log(accounttype.accountType);
   });
   let userObj = {
     username: user.username,
