@@ -41,7 +41,8 @@ failure case:
 - Submit a pull request (PR)
 
 ================================================================
-For Run this project please follow the instructions
+
+### For Run this project please follow the instructions
 1- Run Command - npm install
 2- copy to .env.local file and create new .env file in root directory
 3- run command - npm run dev to run the server
