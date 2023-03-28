@@ -1,0 +1,45 @@
+### [SCENARIO 1]: Same Accounts scenario
+
+PATCH http://localhost:5001/transfer HTTP/1.1
+content-type: application/json
+
+{
+  "fromAccountId": 1,
+  "toAccountId": 1,
+  "amount": 99
+}
+
+### [SCENARIO 2]: The balance in the ‘BasicSavings’ account
+### type should never exceed Rs. 50,000
+
+PATCH http://localhost:5001/transfer HTTP/1.1
+content-type: application/json
+
+{
+  "fromAccountId": 1,
+  "toAccountId": 2,
+  "amount": 100
+}
+
+### [SCENARIO 3]: Source account should have the required 
+### amount for the transaction to succeed
+
+PATCH http://localhost:5001/transfer HTTP/1.1
+content-type: application/json
+
+{
+  "fromAccountId": 1,
+  "toAccountId": 2,
+  "amount": 1000
+}
+
+### [SCENARIO 4]: No Errors
+
+PATCH http://localhost:5001/transfer HTTP/1.1
+content-type: application/json
+
+{
+  "fromAccountId": 1,
+  "toAccountId": 2,
+  "amount": 99
+}
