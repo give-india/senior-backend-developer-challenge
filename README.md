@@ -1,7 +1,7 @@
 ## Pre-requisites
 
-NodeJS Version: 18.15.0
-VS Code Extension: Rest-Client
+- NodeJS Version: 18.15.0
+- VS Code Extension: Rest-Client
 
 ## Instructions
 
