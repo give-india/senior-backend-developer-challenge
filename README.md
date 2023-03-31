@@ -1,35 +1,54 @@
 ## Backend Developer at Give
 
-### Objective
-Write a REST-based API that enables the transfer of money from one bank account to another.
 
-Account types are ‘Savings’, ‘Current’, and ‘BasicSavings’. A single user can have multiple such accounts. The following rules apply:
-* Transfer between accounts belonging to the same user is not allowed.
-* The balance in the ‘BasicSavings’ account type should never exceed Rs. 50,000
-* Source account should have the required amount for the transaction to succeed
 
-The API spec follows: (All amounts in the API are in paisa)
+This project is implimented based on boilerplate code at https://www.npmjs.com/package/create-express-rest-ts
 
-**Input (JSON)**
-* fromAccountId
-* toAccountId
-* amount
+###To start Project
 
-**Output (JSON)**
-success case:
-* newSrcBalance: The balance in the source account after the transfer
-* totalDestBalance: The total balance in all accounts of destination user combined
-* transferedAt: timestamp
+* Clone the repo  and move to that directory
+* Goto the directoy and run ```yarn``` to installl all dependencies
+* Start mongodb local  ```sudo systemctl start mongod``` in linux systems, refer for installaltion and start https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/ 
+* Type ```yarn seed:user`` to create sample users in your local mongo DB 
+* get few account Ids from the DB and update in 'transac/src/seeders/data/accounts.json'
+* you will see a databse with name ```ttrans``` create a collection ```accounts``` ,  import the  the Json data 'transac/src/seeders/data/accounts.json' on mongodb 
+* now the user data, Account data is ready.
 
-failure case:
-* errorCode
-* errorMessage
+* start the server in dev mode by ```yarn dev``
 
-**Any language, framework, and database would do. Our preference would be Node.js since it is most commonly used across our tech stacks, but it is not mandatory**
+###To Test APIs
+we can test the API end points.
 
-### Deliverables
-- Create a fork of this repository
-- Include instructions on how to set it up and run in the README.md
-- Please provide instructions on how to run it in the README.md. Include some sample users/accounts data to test for various scenarios. Around 10 or so sample accounts should suffice to cover the scenarios.
-- Add your resume and other profile / project links
-- Submit a pull request (PR)
+* login first using a user.  you will get a token like  this  ``` eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9....``` copy it.
+
+```typescript
+POST /api/login HTTP/1.1
+Host: localhost:8081
+Content-Type: application/json
+Content-Length: 64
+
+{
+    "email":"leanne@email.com",
+    "password":"leanne123**"
+}
+```
+
+* get the some accout id form Mongo DB, Test the Transaction End point, update in below reqest, 
+* add the Authentication Token at Append ```Barrer <paste you token here>```
+
+* test the end point.
+
+
+```typescript
+POST /api/transactions HTTP/1.1
+Host: localhost:8081
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDI2YTI2YWM0NjQ3Nzk4NDJmMjdkYTUiLCJyb2xlSWQiOiI2NDI2YTI2OGM0NjQ3Nzk4NDJmMjdkOWYiLCJpYXQiOjE2ODAyNTU1NDksImV4cCI6MTY4MDI1NjQ0OX0.sBgDalqvBNsEzfZhwfy_io2h1DgTEMbaGDwOKkLwZMw
+Content-Type: application/json
+Content-Length: 98
+{
+    "from":"6426a6507783c322a3c118ca",
+    "to":"6426a6507783c322a3c118d0",
+    "amount":"100"
+}
+
+```
