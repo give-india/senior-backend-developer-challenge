@@ -1,0 +1,112 @@
+2023-03-30 07:02:56:256 error: Not Found - /favicon.ico
+2023-03-30 07:13:42:1342 error: ValidationError: "firstname" is required
+2023-03-30 07:13:42:1342 error: ValidationError: "email" must be a valid email
+2023-03-30 07:13:42:1342 error: User already exists with this email
+2023-03-30 07:13:42:1342 error: ValidationError: "password" is required
+2023-03-30 07:13:42:1342 error: ValidationError: "email" must be a valid email
+2023-03-30 07:13:42:1342 error: Unable to login. Please try again.
+2023-03-30 07:23:11:2311 error: ValidationError: "firstname" is required
+2023-03-30 07:23:11:2311 error: ValidationError: "email" must be a valid email
+2023-03-30 07:23:12:2312 error: User already exists with this email
+2023-03-30 07:23:12:2312 error: ValidationError: "password" is required
+2023-03-30 07:23:12:2312 error: ValidationError: "email" must be a valid email
+2023-03-30 07:23:12:2312 error: Unable to login. Please try again.
+2023-03-30 07:25:35:2535 error: ValidationError: "firstname" is required
+2023-03-30 07:25:35:2535 error: ValidationError: "email" must be a valid email
+2023-03-30 07:25:35:2535 error: User already exists with this email
+2023-03-30 07:25:35:2535 error: ValidationError: "password" is required
+2023-03-30 07:25:35:2535 error: ValidationError: "email" must be a valid email
+2023-03-30 07:25:35:2535 error: Unable to login. Please try again.
+2023-03-30 08:13:10:1310 error: Not authenticated. You must be logged in to perform this action.
+2023-03-30 08:22:40:2240 error: Not Found - /login
+2023-03-30 08:23:28:2328 error: ValidationError: "email" is required
+2023-03-30 08:25:11:2511 error: ValidationError: "email" is required
+2023-03-30 10:03:41:341 error: Not authenticated. You must be logged in to perform this action.
+2023-03-30 10:04:53:453 error: ValidationError: "email" is required
+2023-03-30 10:06:15:615 error: ValidationError: "email" is required
+2023-03-30 10:08:29:829 error: ValidationError: "email" is required
+2023-03-30 10:10:26:1026 error: ValidationError: "email" is required
+2023-03-30 10:10:38:1038 error: ValidationError: "email" is required
+2023-03-30 10:11:09:119 error: ValidationError: "email" is required
+2023-03-30 10:12:25:1225 error: ValidationError: "email" is required
+2023-03-30 10:12:37:1237 error: ValidationError: "email" is required
+2023-03-30 10:12:47:1247 error: ValidationError: "email" is required
+2023-03-30 10:14:08:148 error: ValidationError: "email" is required
+2023-03-30 10:19:47:1947 error: ValidationError: "email" is required
+2023-03-30 10:21:22:2122 error: ValidationError: "email" is required
+2023-03-30 10:25:38:2538 error: ValidationError: "email" is required
+2023-03-30 10:26:41:2641 error: ValidationError: "email" is required
+2023-03-30 10:26:59:2659 error: ValidationError: "email" is required
+2023-03-30 10:27:12:2712 error: ValidationError: "email" is required
+2023-03-30 10:29:53:2953 error: ValidationError: "email" is required
+2023-03-30 10:32:55:3255 error: Unable to login. Please try again.
+2023-03-30 10:33:29:3329 error: Unable to login. Please try again.
+2023-03-30 14:37:04:374 error: connect ECONNREFUSED 127.0.0.1:27017
+2023-03-30 18:47:32:4732 error: Not Found - /api/accounts
+2023-03-30 19:40:06:406 error: jwt expired
+2023-03-30 19:52:43:5243 error: Not Found - /api/transaction
+2023-03-30 19:55:37:5537 error: Not Found - /api/transaction
+2023-03-30 19:55:44:5544 error: Not Found - /api/transactions
+2023-03-30 19:56:32:5632 error: Not Found - /api/transactions
+2023-03-30 20:08:25:825 error: jwt expired
+2023-03-30 20:29:28:2928 error: jwt expired
+2023-03-30 20:29:55:2955 error: ValidationError: "ammount" must be a number
+2023-03-30 20:34:49:3449 error: ValidationError: "from" length must be 12 characters long
+2023-03-30 20:37:19:3719 error: ValidationError: "from" length must be 12 characters long
+2023-03-30 20:37:29:3729 error: ValidationError: "from" length must be 12 characters long
+2023-03-31 05:48:45:4845 error: connect ECONNREFUSED 127.0.0.1:27017
+2023-03-31 05:50:49:5049 error: invalid token
+2023-03-31 05:51:00:510 error: ValidationError: "from" length must be 12 characters long
+2023-03-31 05:54:46:5446 error: ValidationError: "from" length must be 12 characters long
+2023-03-31 06:01:15:115 error: Invalid account ids
+2023-03-31 06:02:56:256 error: Invalid account ids
+2023-03-31 06:03:18:318 error: Error wile fetching account ids
+2023-03-31 06:43:16:4316 error: jwt expired
+2023-03-31 06:45:10:4510 error: Transaction between same user accounts. not allowed
+2023-03-31 06:45:37:4537 error: Unable to transfer to this account, Savings balance limit reached
+2023-03-31 06:47:39:4739 error: Unable to transfer to this account, Savings balance limit reached
+2023-03-31 06:47:59:4759 error: Unable to transfer to this account, Savings balance limit reached
+2023-03-31 06:52:19:5219 error: Unable to transfer to this account, Savings balance limit reached
+2023-03-31 06:59:04:594 error: jwt expired
+2023-03-31 07:29:13:2913 error: jwt expired
+2023-03-31 07:29:21:2921 error: jwt expired
+2023-03-31 07:38:27:3827 error: Transaction ammount overflow
+2023-03-31 07:38:57:3857 error: Transaction ammount overflow
+2023-03-31 07:53:28:5328 error: jwt expired
+2023-03-31 08:06:51:651 error: Not enoungh balance for this transaction
+2023-03-31 08:07:37:737 error: Not enoungh balance for this transaction
+2023-03-31 08:09:21:921 error: jwt expired
+2023-03-31 08:09:58:958 error: Not enoungh balance for this transaction
+2023-03-31 08:11:39:1139 error: Not enoungh balance for this transaction
+2023-03-31 08:16:10:1610 error: Not enoungh balance for this transaction
+2023-03-31 08:26:08:268 error: jwt expired
+2023-03-31 09:38:02:382 error: jwt expired
+2023-03-31 09:54:36:5436 error: jwt expired
+2023-03-31 10:12:52:1252 error: jwt expired
+2023-03-31 10:27:04:274 error: ValidationError: "ammount" is required
+2023-03-31 10:28:29:2829 error: jwt expired
+2023-03-31 10:28:45:2845 error: jwt expired
+2023-03-31 10:29:18:2918 error: ValidationError: "ammount" is required
+2023-03-31 10:29:24:2924 error: Not Found - /home/anandan/wrk/transac/src/services/crud.service.ts:20:32)
+2023-03-31 10:29:25:2925 error: Not Found - /favicon.ico
+2023-03-31 11:28:30:2830 error: jwt expired
+2023-03-31 11:28:46:2846 error: jwt expired
+2023-03-31 11:49:01:491 error: jwt expired
+2023-03-31 12:08:41:841 error: jwt expired
+2023-03-31 12:19:05:195 error: ValidationError: "from" length must be 24 characters long
+2023-03-31 12:24:12:2412 error: jwt expired
+2023-03-31 12:42:16:4216 error: jwt expired
+2023-03-31 13:12:21:1221 error: jwt expired
+2023-03-31 13:29:33:2933 error: jwt expired
+2023-03-31 13:29:55:2955 error: jwt expired
+2023-03-31 14:32:32:3232 error: ValidationError: "firstname" is required
+2023-03-31 14:32:32:3232 error: ValidationError: "email" must be a valid email
+2023-03-31 14:32:32:3232 error: User already exists with this email
+2023-03-31 14:32:32:3232 error: ValidationError: "password" is required
+2023-03-31 14:32:32:3232 error: ValidationError: "email" must be a valid email
+2023-03-31 14:32:32:3232 error: Unable to login. Please try again.
+2023-03-31 14:33:31:3331 error: Unable to login. Please try again.
+2023-03-31 14:33:51:3351 error: Unable to login. Please try again.
+2023-03-31 14:53:07:537 error: jwt expired
+2023-03-31 15:09:03:93 error: jwt expired
+2023-03-31 18:34:02:342 error: jwt expired

@@ -1,0 +1,47 @@
+[
+  {
+    "balance": 1500,
+    "accountType": "BasicSavings",
+    "user_id": "6426a1a852ac1ba591c63947"
+  },
+  {
+    "balance": 1500,
+    "accountType": "Savings",
+    "user_id": "6426a1a852ac1ba591c63947"
+  },
+  {
+    "balance": 1500,
+    "accountType": "Current",
+    "user_id": "6426a1a852ac1ba591c63947"
+  },
+  {
+    "balance": 1500,
+    "accountType": "BasicSavings",
+    "user_id": "6426a26ac464779842f27da5"
+  },
+  {
+    "balance": 1500,
+    "accountType": "Savings",
+    "user_id": "6426a26ac464779842f27da5"
+  },
+  {
+    "balance": 1500,
+    "accountType": "Current",
+    "user_id": "6426a26ac464779842f27da5"
+  },
+  {
+    "balance": 1500,
+    "accountType": "BasicSavings",
+    "user_id": "6426a26ac464779842f27da6"
+  },
+  {
+    "balance": 1500,
+    "accountType": "Savings",
+    "user_id": "6426a26ac464779842f27da6"
+  },
+  {
+    "balance": 1500,
+    "accountType": "Current",
+    "user_id": "6426a26ac464779842f27da6"
+  }
+]

@@ -1,0 +1,109 @@
+[{
+  "_id": {
+    "$oid": "6426a1a852ac1ba591c63947"
+  },
+  "email": "johndoe@email.com",
+  "password": "$2a$12$J/eop6QhAD4CWLYpzDQepe88vXs2tV5G4o7wz1cGyOVZ9YSqugPOC",
+  "firstname": "John",
+  "lastname": "Doe",
+  "createdAt": {
+    "$date": "2023-03-31T09:02:32.416Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-31T09:02:32.864Z"
+  },
+  "__v": 0,
+  "role": {
+    "$oid": "6426a1a852ac1ba591c63949"
+  }
+},{
+  "_id": {
+    "$oid": "6426a26ac464779842f27da5"
+  },
+  "email": "leanne@email.com",
+  "password": "$2a$12$novrn0E4GYyUxC46dT9lPe8CGRrb/PchR7MfYQl/nr0kfauhC7R3u",
+  "firstname": "Leanne",
+  "lastname": "Graham",
+  "role": {
+    "$oid": "6426a268c464779842f27d9f"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2023-03-31T09:05:46.752Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-31T09:05:46.752Z"
+  }
+},{
+  "_id": {
+    "$oid": "6426a26ac464779842f27da6"
+  },
+  "email": "ervin@email.com",
+  "password": "$2a$12$HqmGqNyqWZs1OOlHaBh84.j093.bxd8YQwkCCcyOumPLNFaV9F/8u",
+  "firstname": "Ervin",
+  "lastname": "Howell",
+  "role": {
+    "$oid": "6426a268c464779842f27da0"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2023-03-31T09:05:46.753Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-31T09:05:46.753Z"
+  }
+},{
+  "_id": {
+    "$oid": "6426a26ac464779842f27da7"
+  },
+  "email": "clementine@email.com",
+  "password": "$2a$12$BqhG0uyAA6759X7LVKk0B.ZRFxhXqkXh3Wbyuj26dMJWBeBGAqghm",
+  "firstname": "Clementine",
+  "lastname": "Bauch",
+  "role": {
+    "$oid": "6426a268c464779842f27da1"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2023-03-31T09:05:46.753Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-31T09:05:46.753Z"
+  }
+},{
+  "_id": {
+    "$oid": "6426a26ac464779842f27da8"
+  },
+  "email": "patricia@email.com",
+  "password": "$2a$12$jKgBXYz2Y5C1MqUXQAc0r.fx/BTpf7iBBycuKC72CVd6mWUsr6Jwa",
+  "firstname": "Patricia",
+  "lastname": "Lebsack",
+  "role": {
+    "$oid": "6426a268c464779842f27da2"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2023-03-31T09:05:46.753Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-31T09:05:46.753Z"
+  }
+},{
+  "_id": {
+    "$oid": "6426a26ac464779842f27da9"
+  },
+  "email": "kurtis@email.com",
+  "password": "$2a$12$Xu1i6Smh33QHC.syOd8lTuUGAgekRmZd3E4kfQoICMOputb4MAsPy",
+  "firstname": "Kurtis",
+  "lastname": "Weissnat",
+  "role": {
+    "$oid": "6426a268c464779842f27da3"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2023-03-31T09:05:46.753Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-31T09:05:46.753Z"
+  }
+}]

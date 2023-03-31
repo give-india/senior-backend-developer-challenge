@@ -1,0 +1,1358 @@
+2023-03-30 06:48:16:4816 warn: Cannot connect to database: Credentials not provided.
+2023-03-30 06:48:16:4816 info: Server ready at: http://localhost:8080/api
+2023-03-30 07:02:49:249 info: Connected to database: trans
+2023-03-30 07:02:49:249 info: Server ready at: http://localhost:8080/api
+2023-03-30 07:02:56:256 http: GET /api 200 10 - 6.936 ms
+2023-03-30 07:02:56:256 error: Not Found - /favicon.ico
+2023-03-30 07:02:56:256 http: GET /favicon.ico 404 986 - 8.678 ms
+2023-03-30 07:12:56:1256 debug: Users seeded!
+2023-03-30 07:13:42:1342 error: ValidationError: "firstname" is required
+2023-03-30 07:13:42:1342 error: ValidationError: "email" must be a valid email
+2023-03-30 07:13:42:1342 error: User already exists with this email
+2023-03-30 07:13:42:1342 error: ValidationError: "password" is required
+2023-03-30 07:13:42:1342 error: ValidationError: "email" must be a valid email
+2023-03-30 07:13:42:1342 error: Unable to login. Please try again.
+2023-03-30 07:22:09:229 debug: Users seeded!
+2023-03-30 07:22:39:2239 debug: Users seeded!
+2023-03-30 07:23:11:2311 error: ValidationError: "firstname" is required
+2023-03-30 07:23:11:2311 error: ValidationError: "email" must be a valid email
+2023-03-30 07:23:12:2312 error: User already exists with this email
+2023-03-30 07:23:12:2312 error: ValidationError: "password" is required
+2023-03-30 07:23:12:2312 error: ValidationError: "email" must be a valid email
+2023-03-30 07:23:12:2312 error: Unable to login. Please try again.
+2023-03-30 07:25:35:2535 error: ValidationError: "firstname" is required
+2023-03-30 07:25:35:2535 error: ValidationError: "email" must be a valid email
+2023-03-30 07:25:35:2535 error: User already exists with this email
+2023-03-30 07:25:35:2535 error: ValidationError: "password" is required
+2023-03-30 07:25:35:2535 error: ValidationError: "email" must be a valid email
+2023-03-30 07:25:35:2535 error: Unable to login. Please try again.
+2023-03-30 08:13:03:133 info: Connected to database: ttrans
+2023-03-30 08:13:03:133 info: Server ready at: http://localhost:8080/api
+2023-03-30 08:13:10:1310 error: Not authenticated. You must be logged in to perform this action.
+2023-03-30 08:13:10:1310 http: GET /api/users 401 810 - 19.347 ms
+2023-03-30 08:22:40:2240 error: Not Found - /login
+2023-03-30 08:22:40:2240 http: POST /login 404 974 - 3.423 ms
+2023-03-30 08:23:28:2328 error: ValidationError: "email" is required
+2023-03-30 08:23:28:2328 http: POST /api/login 400 776 - 9.469 ms
+2023-03-30 08:25:11:2511 error: ValidationError: "email" is required
+2023-03-30 08:25:11:2511 http: POST /api/login 400 776 - 1.778 ms
+2023-03-30 10:03:41:341 error: Not authenticated. You must be logged in to perform this action.
+2023-03-30 10:03:41:341 http: GET /api/users 401 810 - 1.548 ms
+2023-03-30 10:04:53:453 error: ValidationError: "email" is required
+2023-03-30 10:04:53:453 http: POST /api/login 400 776 - 1.436 ms
+2023-03-30 10:06:15:615 error: ValidationError: "email" is required
+2023-03-30 10:06:15:615 http: POST /api/login 400 776 - 2.719 ms
+2023-03-30 10:08:26:826 info: Connected to database: ttrans
+2023-03-30 10:08:26:826 info: Server ready at: http://localhost:8080/api
+2023-03-30 10:08:29:829 error: ValidationError: "email" is required
+2023-03-30 10:08:29:829 http: POST /api/login 400 776 - 27.429 ms
+2023-03-30 10:10:26:1026 error: ValidationError: "email" is required
+2023-03-30 10:10:26:1026 http: POST /api/login 400 776 - 3.434 ms
+2023-03-30 10:10:38:1038 error: ValidationError: "email" is required
+2023-03-30 10:10:38:1038 http: POST /api/login 400 776 - 2.190 ms
+2023-03-30 10:11:09:119 error: ValidationError: "email" is required
+2023-03-30 10:11:09:119 http: POST /api/login 400 776 - 1.556 ms
+2023-03-30 10:12:25:1225 error: ValidationError: "email" is required
+2023-03-30 10:12:25:1225 http: POST /api/login?email=leanne@email.com&password=leanne123** 400 776 - 1.872 ms
+2023-03-30 10:12:37:1237 error: ValidationError: "email" is required
+2023-03-30 10:12:37:1237 http: POST /api/login?email=leanne@email.com&password=leanne123** 400 776 - 21.474 ms
+2023-03-30 10:12:47:1247 error: ValidationError: "email" is required
+2023-03-30 10:12:47:1247 http: POST /api/login?email=leanne@email.com&password=leanne123** 400 776 - 1.476 ms
+2023-03-30 10:14:08:148 error: ValidationError: "email" is required
+2023-03-30 10:14:08:148 http: POST /api/login 400 776 - 1.568 ms
+2023-03-30 10:16:22:1622 info: Connected to database: ttrans
+2023-03-30 10:16:22:1622 info: Server ready at: http://localhost:8080/api
+2023-03-30 10:17:27:1727 info: Connected to database: ttrans
+2023-03-30 10:17:27:1727 info: Server ready at: http://localhost:8080/api
+2023-03-30 10:17:29:1729 info: Connected to database: ttrans
+2023-03-30 10:17:29:1729 info: Server ready at: http://localhost:8080/api
+2023-03-30 10:17:34:1734 info: Connected to database: ttrans
+2023-03-30 10:17:34:1734 info: Server ready at: http://localhost:8080/api
+2023-03-30 10:17:41:1741 info: Connected to database: ttrans
+2023-03-30 10:17:51:1751 info: Connected to database: ttrans
+2023-03-30 10:18:30:1830 info: Connected to database: ttrans
+2023-03-30 10:19:38:1938 info: Connected to database: ttrans
+2023-03-30 10:19:38:1938 info: Server ready at: http://localhost:8081/api
+2023-03-30 10:19:47:1947 error: ValidationError: "email" is required
+2023-03-30 10:19:47:1947 http: POST /api/login 400 776 - 28.165 ms
+2023-03-30 10:21:13:2113 info: Connected to database: ttrans
+2023-03-30 10:21:13:2113 info: Server ready at: http://localhost:8081/api
+2023-03-30 10:21:20:2120 info: Connected to database: ttrans
+2023-03-30 10:21:20:2120 info: Server ready at: http://localhost:8081/api
+2023-03-30 10:21:22:2122 error: ValidationError: "email" is required
+2023-03-30 10:21:22:2122 http: POST /api/login 400 776 - 37.790 ms
+2023-03-30 10:25:38:2538 error: ValidationError: "email" is required
+2023-03-30 10:25:38:2538 http: POST /api/login 400 776 - 9.174 ms
+2023-03-30 10:26:41:2641 error: ValidationError: "email" is required
+2023-03-30 10:26:41:2641 http: POST /api/login 400 776 - 10.245 ms
+2023-03-30 10:26:59:2659 error: ValidationError: "email" is required
+2023-03-30 10:26:59:2659 http: POST /api/login 400 776 - 10.247 ms
+2023-03-30 10:27:12:2712 error: ValidationError: "email" is required
+2023-03-30 10:27:12:2712 http: POST /api/login 400 776 - 33.621 ms
+2023-03-30 10:29:53:2953 error: ValidationError: "email" is required
+2023-03-30 10:29:53:2953 http: POST /api/login 400 776 - 5.969 ms
+2023-03-30 10:32:55:3255 error: Unable to login. Please try again.
+2023-03-30 10:32:55:3255 http: POST /api/login 422 521 - 57.051 ms
+2023-03-30 10:33:28:3328 info: Connected to database: ttrans
+2023-03-30 10:33:28:3328 info: Server ready at: http://localhost:8081/api
+2023-03-30 10:33:29:3329 error: Unable to login. Please try again.
+2023-03-30 10:33:29:3329 http: POST /api/login 422 521 - 66.618 ms
+2023-03-30 10:38:54:3854 info: Connected to database: ttrans
+2023-03-30 10:38:54:3854 info: Server ready at: http://localhost:8081/api
+2023-03-30 10:39:01:391 http: POST /api/login 200 288 - 508.597 ms
+2023-03-30 14:37:04:374 error: connect ECONNREFUSED 127.0.0.1:27017
+2023-03-30 14:37:04:374 info: Server ready at: http://localhost:8081/api
+2023-03-30 16:36:02:362 debug: Users seeded!
+2023-03-30 18:44:22:4422 info: Connected to database: ttrans
+2023-03-30 18:44:22:4422 info: Server ready at: http://localhost:8081/api
+2023-03-30 18:46:19:4619 http: POST /api/login 200 288 - 519.258 ms
+2023-03-30 18:47:20:4720 http: GET /api/users 200 871 - 13.961 ms
+2023-03-30 18:47:32:4732 error: Not Found - /api/accounts
+2023-03-30 18:47:32:4732 http: GET /api/accounts 404 954 - 6.467 ms
+2023-03-30 18:51:02:512 info: Connected to database: ttrans
+2023-03-30 18:51:02:512 info: Server ready at: http://localhost:8081/api
+2023-03-30 18:51:13:5113 info: Connected to database: ttrans
+2023-03-30 18:51:13:5113 info: Server ready at: http://localhost:8081/api
+2023-03-30 18:52:02:522 info: Connected to database: ttrans
+2023-03-30 18:52:02:522 info: Server ready at: http://localhost:8081/api
+2023-03-30 18:52:04:524 info: Connected to database: ttrans
+2023-03-30 18:52:04:524 info: Server ready at: http://localhost:8081/api
+2023-03-30 18:52:07:527 info: Connected to database: ttrans
+2023-03-30 18:52:07:527 info: Server ready at: http://localhost:8081/api
+2023-03-30 18:52:25:5225 http: GET /api/accounts 200 - - 28.697 ms
+2023-03-30 18:52:42:5242 http: GET /api/accounts/64258ad59f6f7d87a05b25d9 200 132 - 7.420 ms
+2023-03-30 19:40:06:406 error: jwt expired
+2023-03-30 19:40:06:406 http: GET /api/accounts/64258ad59f6f7d87a05b25d9 401 705 - 13.453 ms
+2023-03-30 19:40:22:4022 http: POST /api/login 200 288 - 506.063 ms
+2023-03-30 19:40:45:4045 http: GET /api/accounts/64258ad59f6f7d87a05b25d9 200 132 - 4.211 ms
+2023-03-30 19:43:31:4331 http: GET /api/accounts/64258ad59f6f7d87a05b25d9 200 132 - 4.510 ms
+2023-03-30 19:48:42:4842 http: POST /api/login 200 288 - 442.308 ms
+2023-03-30 19:52:43:5243 error: Not Found - /api/transaction
+2023-03-30 19:52:43:5243 http: GET /api/transaction 404 960 - 1.981 ms
+2023-03-30 19:53:48:5348 info: Connected to database: ttrans
+2023-03-30 19:53:48:5348 info: Server ready at: http://localhost:8081/api
+2023-03-30 19:55:01:551 info: Connected to database: ttrans
+2023-03-30 19:55:01:551 info: Server ready at: http://localhost:8081/api
+2023-03-30 19:55:21:5521 info: Connected to database: ttrans
+2023-03-30 19:55:21:5521 info: Server ready at: http://localhost:8081/api
+2023-03-30 19:55:29:5529 info: Connected to database: ttrans
+2023-03-30 19:55:29:5529 info: Server ready at: http://localhost:8081/api
+2023-03-30 19:55:37:5537 error: Not Found - /api/transaction
+2023-03-30 19:55:37:5537 http: GET /api/transaction 404 960 - 25.319 ms
+2023-03-30 19:55:44:5544 error: Not Found - /api/transactions
+2023-03-30 19:55:44:5544 http: GET /api/transactions 404 884 - 5.453 ms
+2023-03-30 19:56:02:562 info: Connected to database: ttrans
+2023-03-30 19:56:02:562 info: Server ready at: http://localhost:8081/api
+2023-03-30 19:56:32:5632 error: Not Found - /api/transactions
+2023-03-30 19:56:32:5632 http: GET /api/transactions 404 884 - 27.435 ms
+2023-03-30 19:56:55:5655 http: POST /api/transactions 201 47 - 23.205 ms
+2023-03-30 19:59:38:5938 info: Connected to database: ttrans
+2023-03-30 19:59:38:5938 info: Server ready at: http://localhost:8081/api
+2023-03-30 20:08:22:822 info: Connected to database: ttrans
+2023-03-30 20:08:22:822 info: Server ready at: http://localhost:8081/api
+2023-03-30 20:08:25:825 error: jwt expired
+2023-03-30 20:08:25:825 http: POST /api/transactions 401 705 - 34.919 ms
+2023-03-30 20:08:38:838 http: POST /api/login 200 288 - 494.791 ms
+2023-03-30 20:10:13:1013 http: POST /api/transactions 201 47 - 9.200 ms
+2023-03-30 20:10:16:1016 http: POST /api/transactions 201 47 - 9.278 ms
+2023-03-30 20:11:13:1113 http: POST /api/transactions 201 47 - 5.116 ms
+2023-03-30 20:29:28:2928 error: jwt expired
+2023-03-30 20:29:28:2928 http: POST /api/transactions 401 705 - 3.772 ms
+2023-03-30 20:29:37:2937 http: POST /api/login 200 288 - 464.150 ms
+2023-03-30 20:29:55:2955 error: ValidationError: "ammount" must be a number
+2023-03-30 20:29:55:2955 http: POST /api/transactions 400 825 - 8.310 ms
+2023-03-30 20:34:19:3419 info: Connected to database: ttrans
+2023-03-30 20:34:19:3419 info: Server ready at: http://localhost:8081/api
+2023-03-30 20:34:49:3449 error: ValidationError: "from" length must be 12 characters long
+2023-03-30 20:34:49:3449 http: POST /api/transactions 400 853 - 37.832 ms
+2023-03-30 20:36:02:362 info: Connected to database: ttrans
+2023-03-30 20:36:02:362 info: Server ready at: http://localhost:8081/api
+2023-03-30 20:36:18:3618 info: Connected to database: ttrans
+2023-03-30 20:36:18:3618 info: Server ready at: http://localhost:8081/api
+2023-03-30 20:37:19:3719 error: ValidationError: "from" length must be 12 characters long
+2023-03-30 20:37:19:3719 http: POST /api/transactions 400 853 - 47.365 ms
+2023-03-30 20:37:29:3729 error: ValidationError: "from" length must be 12 characters long
+2023-03-30 20:37:29:3729 http: POST /api/transactions 400 853 - 4.376 ms
+2023-03-31 05:48:45:4845 error: connect ECONNREFUSED 127.0.0.1:27017
+2023-03-31 05:48:45:4845 info: Server ready at: http://localhost:8081/api
+2023-03-31 05:50:07:507 info: Connected to database: ttrans
+2023-03-31 05:50:07:507 info: Server ready at: http://localhost:8081/api
+2023-03-31 05:50:12:5012 http: POST /api/login 200 288 - 506.668 ms
+2023-03-31 05:50:49:5049 error: invalid token
+2023-03-31 05:50:49:5049 http: POST /api/transactions 401 709 - 13.450 ms
+2023-03-31 05:51:00:510 error: ValidationError: "from" length must be 12 characters long
+2023-03-31 05:51:00:510 http: POST /api/transactions 400 853 - 9.176 ms
+2023-03-31 05:54:46:5446 error: ValidationError: "from" length must be 12 characters long
+2023-03-31 05:54:46:5446 http: POST /api/transactions 400 853 - 3.949 ms
+2023-03-31 05:56:16:5616 info: Connected to database: ttrans
+2023-03-31 05:56:16:5616 info: Server ready at: http://localhost:8081/api
+2023-03-31 05:56:18:5618 http: POST /api/transactions 201 47 - 42.187 ms
+2023-03-31 05:57:41:5741 info: Connected to database: ttrans
+2023-03-31 05:57:41:5741 info: Server ready at: http://localhost:8081/api
+2023-03-31 05:58:04:584 info: Connected to database: ttrans
+2023-03-31 05:58:04:584 info: Server ready at: http://localhost:8081/api
+2023-03-31 05:58:06:586 info: Connected to database: ttrans
+2023-03-31 05:58:06:586 info: Server ready at: http://localhost:8081/api
+2023-03-31 05:58:13:5813 http: POST /api/transactions 201 47 - 41.005 ms
+2023-03-31 05:59:09:599 info: Connected to database: ttrans
+2023-03-31 05:59:09:599 info: Server ready at: http://localhost:8081/api
+2023-03-31 05:59:12:5912 http: POST /api/transactions 201 47 - 44.498 ms
+2023-03-31 05:59:23:5923 info: Connected to database: ttrans
+2023-03-31 05:59:23:5923 info: Server ready at: http://localhost:8081/api
+2023-03-31 05:59:30:5930 info: Connected to database: ttrans
+2023-03-31 05:59:30:5930 info: Server ready at: http://localhost:8081/api
+2023-03-31 05:59:32:5932 info: Connected to database: ttrans
+2023-03-31 05:59:32:5932 info: Server ready at: http://localhost:8081/api
+2023-03-31 05:59:38:5938 http: POST /api/transactions 201 47 - 42.022 ms
+2023-03-31 06:00:11:011 info: Connected to database: ttrans
+2023-03-31 06:00:11:011 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:00:49:049 info: Connected to database: ttrans
+2023-03-31 06:00:49:049 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:00:53:053 http: POST /api/transactions 201 47 - 42.085 ms
+2023-03-31 06:01:13:113 info: Connected to database: ttrans
+2023-03-31 06:01:13:113 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:01:15:115 error: Invalid account ids
+2023-03-31 06:01:15:115 http: POST /api/transactions 404 363 - 60.730 ms
+2023-03-31 06:02:26:226 info: Connected to database: ttrans
+2023-03-31 06:02:26:226 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:02:45:245 info: Connected to database: ttrans
+2023-03-31 06:02:45:245 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:02:54:254 info: Connected to database: ttrans
+2023-03-31 06:02:54:254 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:02:56:256 error: Invalid account ids
+2023-03-31 06:02:56:256 http: POST /api/transactions 404 363 - 63.078 ms
+2023-03-31 06:03:10:310 info: Connected to database: ttrans
+2023-03-31 06:03:10:310 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:03:14:314 info: Connected to database: ttrans
+2023-03-31 06:03:14:314 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:03:18:318 error: Error wile fetching account ids
+2023-03-31 06:03:18:318 http: POST /api/transactions 404 387 - 61.758 ms
+2023-03-31 06:03:22:322 info: Connected to database: ttrans
+2023-03-31 06:03:22:322 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:03:25:325 info: Connected to database: ttrans
+2023-03-31 06:03:25:325 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:03:32:332 info: Connected to database: ttrans
+2023-03-31 06:03:32:332 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:03:39:339 info: Connected to database: ttrans
+2023-03-31 06:03:39:339 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:04:26:426 http: POST /api/transactions - - - - ms
+2023-03-31 06:07:12:712 info: Connected to database: ttrans
+2023-03-31 06:07:12:712 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:08:32:832 info: Connected to database: ttrans
+2023-03-31 06:08:32:832 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:08:51:851 info: Connected to database: ttrans
+2023-03-31 06:08:51:851 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:08:52:852 info: Connected to database: ttrans
+2023-03-31 06:08:52:852 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:09:38:938 info: Connected to database: ttrans
+2023-03-31 06:09:38:938 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:10:06:106 info: Connected to database: ttrans
+2023-03-31 06:10:06:106 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:10:44:1044 info: Connected to database: ttrans
+2023-03-31 06:10:44:1044 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:11:00:110 info: Connected to database: ttrans
+2023-03-31 06:11:00:110 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:11:28:1128 info: Connected to database: ttrans
+2023-03-31 06:11:28:1128 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:11:49:1149 info: Connected to database: ttrans
+2023-03-31 06:11:49:1149 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:12:22:1222 info: Connected to database: ttrans
+2023-03-31 06:12:22:1222 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:27:53:2753 info: Connected to database: ttrans
+2023-03-31 06:27:53:2753 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:27:54:2754 info: Connected to database: ttrans
+2023-03-31 06:27:54:2754 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:28:08:288 info: Connected to database: ttrans
+2023-03-31 06:28:08:288 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:28:10:2810 info: Connected to database: ttrans
+2023-03-31 06:28:10:2810 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:29:16:2916 info: Connected to database: ttrans
+2023-03-31 06:29:16:2916 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:30:33:3033 info: Connected to database: ttrans
+2023-03-31 06:30:33:3033 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:30:52:3052 info: Connected to database: ttrans
+2023-03-31 06:30:52:3052 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:31:03:313 info: Connected to database: ttrans
+2023-03-31 06:31:03:313 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:34:35:3435 info: Connected to database: ttrans
+2023-03-31 06:34:35:3435 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:40:19:4019 info: Connected to database: ttrans
+2023-03-31 06:40:19:4019 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:41:14:4114 info: Connected to database: ttrans
+2023-03-31 06:41:14:4114 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:41:16:4116 info: Connected to database: ttrans
+2023-03-31 06:41:16:4116 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:41:21:4121 info: Connected to database: ttrans
+2023-03-31 06:41:21:4121 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:41:38:4138 info: Connected to database: ttrans
+2023-03-31 06:41:38:4138 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:43:08:438 info: Connected to database: ttrans
+2023-03-31 06:43:08:438 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:43:13:4313 info: Connected to database: ttrans
+2023-03-31 06:43:13:4313 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:43:16:4316 error: jwt expired
+2023-03-31 06:43:16:4316 http: POST /api/transactions 401 705 - 35.237 ms
+2023-03-31 06:43:39:4339 http: POST /api/login 200 288 - 494.988 ms
+2023-03-31 06:44:45:4445 info: Connected to database: ttrans
+2023-03-31 06:44:45:4445 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:44:53:4453 info: Connected to database: ttrans
+2023-03-31 06:44:53:4453 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:45:10:4510 error: Transaction between same user accounts. not allowed
+2023-03-31 06:45:10:4510 http: POST /api/transactions 404 427 - 67.044 ms
+2023-03-31 06:45:37:4537 error: Unable to transfer to this account, Savings balance limit reached
+2023-03-31 06:45:37:4537 http: POST /api/transactions 404 455 - 9.734 ms
+2023-03-31 06:47:12:4712 info: Connected to database: ttrans
+2023-03-31 06:47:12:4712 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:47:30:4730 info: Connected to database: ttrans
+2023-03-31 06:47:30:4730 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:47:39:4739 error: Unable to transfer to this account, Savings balance limit reached
+2023-03-31 06:47:39:4739 http: POST /api/transactions 404 455 - 63.650 ms
+2023-03-31 06:47:46:4746 info: Connected to database: ttrans
+2023-03-31 06:47:46:4746 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:47:57:4757 info: Connected to database: ttrans
+2023-03-31 06:47:57:4757 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:47:59:4759 error: Unable to transfer to this account, Savings balance limit reached
+2023-03-31 06:47:59:4759 http: POST /api/transactions 404 455 - 67.012 ms
+2023-03-31 06:50:00:500 info: Connected to database: ttrans
+2023-03-31 06:50:00:500 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:51:04:514 info: Connected to database: ttrans
+2023-03-31 06:51:04:514 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:51:38:5138 info: Connected to database: ttrans
+2023-03-31 06:51:38:5138 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:52:11:5211 info: Connected to database: ttrans
+2023-03-31 06:52:11:5211 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:52:16:5216 info: Connected to database: ttrans
+2023-03-31 06:52:16:5216 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:52:19:5219 error: Unable to transfer to this account, Savings balance limit reached
+2023-03-31 06:52:19:5219 http: POST /api/transactions 404 456 - 65.918 ms
+2023-03-31 06:53:04:534 info: Connected to database: ttrans
+2023-03-31 06:53:04:534 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:53:23:5323 http: POST /api/transactions - - - - ms
+2023-03-31 06:54:00:540 info: Connected to database: ttrans
+2023-03-31 06:54:00:540 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:54:14:5414 http: POST /api/transactions - - - - ms
+2023-03-31 06:56:31:5631 info: Connected to database: ttrans
+2023-03-31 06:56:31:5631 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:56:46:5646 info: Connected to database: ttrans
+2023-03-31 06:56:46:5646 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:57:12:5712 info: Connected to database: ttrans
+2023-03-31 06:57:12:5712 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:57:38:5738 info: Connected to database: ttrans
+2023-03-31 06:57:38:5738 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:58:47:5847 info: Connected to database: ttrans
+2023-03-31 06:58:48:5848 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:58:58:5858 info: Connected to database: ttrans
+2023-03-31 06:58:58:5858 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:59:01:591 info: Connected to database: ttrans
+2023-03-31 06:59:01:591 info: Server ready at: http://localhost:8081/api
+2023-03-31 06:59:04:594 error: jwt expired
+2023-03-31 06:59:04:594 http: POST /api/transactions 401 705 - 35.371 ms
+2023-03-31 06:59:13:5913 http: POST /api/login 200 288 - 490.440 ms
+2023-03-31 07:00:55:055 info: Connected to database: ttrans
+2023-03-31 07:00:55:055 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:02:15:215 info: Connected to database: ttrans
+2023-03-31 07:02:15:215 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:02:53:253 info: Connected to database: ttrans
+2023-03-31 07:02:53:253 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:10:23:1023 info: Connected to database: ttrans
+2023-03-31 07:10:23:1023 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:10:44:1044 info: Connected to database: ttrans
+2023-03-31 07:10:44:1044 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:11:08:118 info: Connected to database: ttrans
+2023-03-31 07:11:08:118 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:11:12:1112 http: POST /api/transactions 200 47 - 60.739 ms
+2023-03-31 07:11:36:1136 http: POST /api/transactions 200 47 - 15.155 ms
+2023-03-31 07:11:37:1137 http: POST /api/transactions 200 47 - 12.658 ms
+2023-03-31 07:11:38:1138 http: POST /api/transactions 200 47 - 12.852 ms
+2023-03-31 07:11:39:1139 http: POST /api/transactions 200 47 - 14.557 ms
+2023-03-31 07:15:15:1515 info: Connected to database: ttrans
+2023-03-31 07:15:15:1515 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:16:20:1620 info: Connected to database: ttrans
+2023-03-31 07:16:20:1620 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:16:56:1656 info: Connected to database: ttrans
+2023-03-31 07:16:56:1656 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:17:36:1736 info: Connected to database: ttrans
+2023-03-31 07:17:36:1736 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:17:49:1749 info: Connected to database: ttrans
+2023-03-31 07:17:49:1749 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:17:55:1755 info: Connected to database: ttrans
+2023-03-31 07:17:55:1755 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:19:06:196 info: Connected to database: ttrans
+2023-03-31 07:19:06:196 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:19:56:1956 info: Connected to database: ttrans
+2023-03-31 07:19:56:1956 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:20:30:2030 info: Connected to database: ttrans
+2023-03-31 07:20:30:2030 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:22:14:2214 info: Connected to database: ttrans
+2023-03-31 07:22:14:2214 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:22:42:2242 info: Connected to database: ttrans
+2023-03-31 07:22:42:2242 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:22:51:2251 info: Connected to database: ttrans
+2023-03-31 07:22:51:2251 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:23:39:2339 info: Connected to database: ttrans
+2023-03-31 07:23:39:2339 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:24:34:2434 info: Connected to database: ttrans
+2023-03-31 07:24:34:2434 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:24:43:2443 info: Connected to database: ttrans
+2023-03-31 07:24:43:2443 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:25:19:2519 info: Connected to database: ttrans
+2023-03-31 07:25:19:2519 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:25:59:2559 info: Connected to database: ttrans
+2023-03-31 07:25:59:2559 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:27:22:2722 info: Connected to database: ttrans
+2023-03-31 07:27:22:2722 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:27:31:2731 info: Connected to database: ttrans
+2023-03-31 07:27:31:2731 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:28:04:284 info: Connected to database: ttrans
+2023-03-31 07:28:04:284 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:28:14:2814 info: Connected to database: ttrans
+2023-03-31 07:28:14:2814 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:28:18:2818 info: Connected to database: ttrans
+2023-03-31 07:28:18:2818 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:28:22:2822 info: Connected to database: ttrans
+2023-03-31 07:28:22:2822 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:28:27:2827 info: Connected to database: ttrans
+2023-03-31 07:28:27:2827 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:28:55:2855 info: Connected to database: ttrans
+2023-03-31 07:28:55:2855 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:29:03:293 info: Connected to database: ttrans
+2023-03-31 07:29:03:293 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:29:13:2913 error: jwt expired
+2023-03-31 07:29:13:2913 http: POST /api/transactions 401 705 - 37.675 ms
+2023-03-31 07:29:21:2921 error: jwt expired
+2023-03-31 07:29:21:2921 http: POST /api/transactions 401 705 - 4.111 ms
+2023-03-31 07:29:27:2927 http: POST /api/login 200 288 - 495.978 ms
+2023-03-31 07:32:33:3233 info: Connected to database: ttrans
+2023-03-31 07:32:33:3233 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:32:46:3246 info: Connected to database: ttrans
+2023-03-31 07:32:46:3246 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:33:27:3327 info: Connected to database: ttrans
+2023-03-31 07:33:27:3327 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:33:34:3334 info: Connected to database: ttrans
+2023-03-31 07:33:34:3334 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:33:38:3338 info: Connected to database: ttrans
+2023-03-31 07:33:38:3338 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:33:41:3341 info: Connected to database: ttrans
+2023-03-31 07:33:41:3341 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:34:04:344 info: Connected to database: ttrans
+2023-03-31 07:34:04:344 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:34:07:347 http: POST /api/login 200 288 - 514.655 ms
+2023-03-31 07:34:28:3428 info: Connected to database: ttrans
+2023-03-31 07:34:28:3428 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:37:27:3727 info: Connected to database: ttrans
+2023-03-31 07:37:27:3727 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:37:30:3730 info: Connected to database: ttrans
+2023-03-31 07:37:30:3730 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:37:36:3736 info: Connected to database: ttrans
+2023-03-31 07:37:36:3736 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:38:06:386 info: Connected to database: ttrans
+2023-03-31 07:38:06:386 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:38:11:3811 info: Connected to database: ttrans
+2023-03-31 07:38:11:3811 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:38:27:3827 error: Transaction ammount overflow
+2023-03-31 07:38:27:3827 http: POST /api/transactions 404 382 - 89.529 ms
+2023-03-31 07:38:53:3853 info: Connected to database: ttrans
+2023-03-31 07:38:53:3853 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:38:57:3857 error: Transaction ammount overflow
+2023-03-31 07:38:57:3857 http: POST /api/transactions 404 381 - 81.182 ms
+2023-03-31 07:39:17:3917 info: Connected to database: ttrans
+2023-03-31 07:39:17:3917 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:40:21:4021 info: Connected to database: ttrans
+2023-03-31 07:40:21:4021 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:40:23:4023 http: POST /api/transactions 500 42 - 59.282 ms
+2023-03-31 07:41:07:417 info: Connected to database: ttrans
+2023-03-31 07:41:07:417 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:41:48:4148 info: Connected to database: ttrans
+2023-03-31 07:41:48:4148 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:41:50:4150 http: POST /api/transactions 500 42 - 65.651 ms
+2023-03-31 07:42:52:4252 info: Connected to database: ttrans
+2023-03-31 07:42:52:4252 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:42:55:4255 http: POST /api/transactions 500 42 - 58.932 ms
+2023-03-31 07:44:33:4433 info: Connected to database: ttrans
+2023-03-31 07:44:33:4433 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:45:02:452 info: Connected to database: ttrans
+2023-03-31 07:45:02:452 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:45:04:454 http: POST /api/transactions 500 42 - 60.810 ms
+2023-03-31 07:53:24:5324 info: Connected to database: ttrans
+2023-03-31 07:53:24:5324 info: Server ready at: http://localhost:8081/api
+2023-03-31 07:53:28:5328 error: jwt expired
+2023-03-31 07:53:28:5328 http: POST /api/transactions 401 705 - 34.743 ms
+2023-03-31 07:53:36:5336 http: POST /api/login 200 288 - 509.425 ms
+2023-03-31 07:54:41:5441 http: POST /api/transactions 500 42 - 20.255 ms
+2023-03-31 07:58:08:588 info: Connected to database: ttrans
+2023-03-31 07:58:08:588 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:01:07:17 info: Connected to database: ttrans
+2023-03-31 08:01:07:17 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:01:10:110 http: POST /api/transactions 201 47 - 69.454 ms
+2023-03-31 08:01:33:133 info: Connected to database: ttrans
+2023-03-31 08:01:33:133 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:01:45:145 info: Connected to database: ttrans
+2023-03-31 08:01:45:145 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:01:47:147 http: POST /api/transactions 201 47 - 66.615 ms
+2023-03-31 08:04:38:438 info: Connected to database: ttrans
+2023-03-31 08:04:38:438 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:04:44:444 info: Connected to database: ttrans
+2023-03-31 08:04:44:444 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:04:50:450 info: Connected to database: ttrans
+2023-03-31 08:04:50:450 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:04:58:458 info: Connected to database: ttrans
+2023-03-31 08:04:58:458 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:05:00:50 http: POST /api/transactions 201 47 - 66.262 ms
+2023-03-31 08:06:02:62 info: Connected to database: ttrans
+2023-03-31 08:06:02:62 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:06:04:64 http: POST /api/transactions 201 47 - 68.939 ms
+2023-03-31 08:06:20:620 http: POST /api/transactions 201 47 - 17.929 ms
+2023-03-31 08:06:28:628 http: POST /api/transactions 201 47 - 20.606 ms
+2023-03-31 08:06:33:633 http: POST /api/transactions 201 47 - 16.582 ms
+2023-03-31 08:06:36:636 http: POST /api/transactions 201 47 - 12.978 ms
+2023-03-31 08:06:37:637 http: POST /api/transactions 201 47 - 12.324 ms
+2023-03-31 08:06:38:638 http: POST /api/transactions 201 47 - 13.794 ms
+2023-03-31 08:06:38:638 http: POST /api/transactions 201 47 - 11.687 ms
+2023-03-31 08:06:39:639 http: POST /api/transactions 201 47 - 13.691 ms
+2023-03-31 08:06:43:643 http: POST /api/transactions 201 47 - 15.602 ms
+2023-03-31 08:06:46:646 http: POST /api/transactions 201 47 - 11.151 ms
+2023-03-31 08:06:49:649 http: POST /api/transactions 201 47 - 11.309 ms
+2023-03-31 08:06:50:650 http: POST /api/transactions 201 47 - 10.289 ms
+2023-03-31 08:06:51:651 error: Not enoungh balance for this transaction
+2023-03-31 08:06:51:651 http: POST /api/transactions 400 405 - 23.915 ms
+2023-03-31 08:07:32:732 info: Connected to database: ttrans
+2023-03-31 08:07:32:732 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:07:37:737 error: Not enoungh balance for this transaction
+2023-03-31 08:07:37:737 http: POST /api/transactions 400 405 - 81.362 ms
+2023-03-31 08:08:56:856 info: Connected to database: ttrans
+2023-03-31 08:08:56:856 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:09:04:94 info: Connected to database: ttrans
+2023-03-31 08:09:04:94 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:09:21:921 error: jwt expired
+2023-03-31 08:09:21:921 http: POST /api/transactions 401 705 - 37.124 ms
+2023-03-31 08:09:30:930 http: POST /api/login 200 288 - 496.818 ms
+2023-03-31 08:09:58:958 error: Not enoungh balance for this transaction
+2023-03-31 08:09:58:958 http: POST /api/transactions 400 405 - 20.070 ms
+2023-03-31 08:11:34:1134 info: Connected to database: ttrans
+2023-03-31 08:11:34:1134 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:11:39:1139 error: Not enoungh balance for this transaction
+2023-03-31 08:11:39:1139 http: POST /api/transactions 400 405 - 74.233 ms
+2023-03-31 08:13:13:1313 info: Connected to database: ttrans
+2023-03-31 08:13:13:1313 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:13:34:1334 info: Connected to database: ttrans
+2023-03-31 08:13:34:1334 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:13:37:1337 info: Connected to database: ttrans
+2023-03-31 08:13:37:1337 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:15:03:153 info: Connected to database: ttrans
+2023-03-31 08:15:03:153 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:15:08:158 info: Connected to database: ttrans
+2023-03-31 08:15:08:158 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:16:10:1610 error: Not enoungh balance for this transaction
+2023-03-31 08:16:10:1610 http: POST /api/transactions 400 405 - 75.260 ms
+2023-03-31 08:18:23:1823 info: Connected to database: ttrans
+2023-03-31 08:18:23:1823 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:18:38:1838 info: Connected to database: ttrans
+2023-03-31 08:18:38:1838 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:19:04:194 info: Connected to database: ttrans
+2023-03-31 08:19:04:194 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:19:29:1929 info: Connected to database: ttrans
+2023-03-31 08:19:29:1929 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:19:34:1934 http: POST /api/transactions 400 - - 54.280 ms
+2023-03-31 08:19:49:1949 info: Connected to database: ttrans
+2023-03-31 08:19:49:1949 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:19:53:1953 http: POST /api/transactions 400 - - 48.414 ms
+2023-03-31 08:20:54:2054 info: Connected to database: ttrans
+2023-03-31 08:20:54:2054 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:20:57:2057 http: POST /api/transactions 400 - - 50.474 ms
+2023-03-31 08:22:49:2249 info: Connected to database: ttrans
+2023-03-31 08:22:49:2249 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:22:51:2251 info: Connected to database: ttrans
+2023-03-31 08:22:51:2251 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:22:52:2252 info: Connected to database: ttrans
+2023-03-31 08:22:52:2252 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:22:55:2255 info: Connected to database: ttrans
+2023-03-31 08:22:55:2255 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:23:10:2310 info: Connected to database: ttrans
+2023-03-31 08:23:10:2310 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:23:15:2315 http: POST /api/transactions 200 - - 42.028 ms
+2023-03-31 08:23:28:2328 info: Connected to database: ttrans
+2023-03-31 08:23:28:2328 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:23:57:2357 info: Connected to database: ttrans
+2023-03-31 08:23:57:2357 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:24:26:2426 info: Connected to database: ttrans
+2023-03-31 08:24:26:2426 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:25:28:2528 info: Connected to database: ttrans
+2023-03-31 08:25:28:2528 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:25:43:2543 info: Connected to database: ttrans
+2023-03-31 08:25:43:2543 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:25:50:2550 info: Connected to database: ttrans
+2023-03-31 08:25:50:2550 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:26:08:268 error: jwt expired
+2023-03-31 08:26:08:268 http: POST /api/transactions 401 705 - 37.631 ms
+2023-03-31 08:26:18:2618 http: POST /api/login 200 288 - 500.313 ms
+2023-03-31 08:27:03:273 info: Connected to database: ttrans
+2023-03-31 08:27:03:273 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:27:24:2724 info: Connected to database: ttrans
+2023-03-31 08:27:24:2724 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:28:29:2829 info: Connected to database: ttrans
+2023-03-31 08:28:29:2829 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:28:47:2847 info: Connected to database: ttrans
+2023-03-31 08:28:47:2847 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:29:14:2914 info: Connected to database: ttrans
+2023-03-31 08:29:14:2914 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:33:46:3346 info: Connected to database: ttrans
+2023-03-31 08:33:46:3346 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:33:50:3350 info: Connected to database: ttrans
+2023-03-31 08:33:50:3350 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:33:57:3357 info: Connected to database: ttrans
+2023-03-31 08:33:57:3357 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:34:10:3410 info: Connected to database: ttrans
+2023-03-31 08:34:10:3410 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:34:21:3421 info: Connected to database: ttrans
+2023-03-31 08:34:21:3421 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:35:11:3511 info: Connected to database: ttrans
+2023-03-31 08:35:11:3511 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:35:42:3542 info: Connected to database: ttrans
+2023-03-31 08:35:42:3542 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:36:02:362 info: Connected to database: ttrans
+2023-03-31 08:36:02:362 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:37:40:3740 info: Connected to database: ttrans
+2023-03-31 08:37:40:3740 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:37:44:3744 info: Connected to database: ttrans
+2023-03-31 08:37:44:3744 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:37:53:3753 info: Connected to database: ttrans
+2023-03-31 08:37:53:3753 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:37:55:3755 info: Connected to database: ttrans
+2023-03-31 08:37:55:3755 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:37:57:3757 info: Connected to database: ttrans
+2023-03-31 08:37:57:3757 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:39:05:395 info: Connected to database: ttrans
+2023-03-31 08:39:05:395 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:39:16:3916 info: Connected to database: ttrans
+2023-03-31 08:39:16:3916 info: Server ready at: http://localhost:8081/api
+2023-03-31 08:39:24:3924 info: Connected to database: ttrans
+2023-03-31 08:39:24:3924 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:06:36:636 info: Connected to database: ttrans
+2023-03-31 09:06:36:636 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:07:36:736 info: Connected to database: ttrans
+2023-03-31 09:07:36:736 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:08:09:89 info: Connected to database: ttrans
+2023-03-31 09:08:09:89 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:09:12:912 info: Connected to database: ttrans
+2023-03-31 09:09:12:912 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:09:15:915 info: Connected to database: ttrans
+2023-03-31 09:09:15:915 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:09:19:919 info: Connected to database: ttrans
+2023-03-31 09:09:19:919 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:15:52:1552 info: Connected to database: ttrans
+2023-03-31 09:15:52:1552 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:16:30:1630 info: Connected to database: ttrans
+2023-03-31 09:16:30:1630 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:16:58:1658 info: Connected to database: ttrans
+2023-03-31 09:16:58:1658 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:17:00:170 http: POST /api/login 200 288 - 512.604 ms
+2023-03-31 09:17:20:1720 http: POST /api/transactions 200 - - 12.129 ms
+2023-03-31 09:18:11:1811 info: Connected to database: ttrans
+2023-03-31 09:18:11:1811 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:18:22:1822 info: Connected to database: ttrans
+2023-03-31 09:18:22:1822 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:18:29:1829 info: Connected to database: ttrans
+2023-03-31 09:18:29:1829 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:19:11:1911 info: Connected to database: ttrans
+2023-03-31 09:19:11:1911 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:19:12:1912 http: POST /api/transactions 200 - - 42.533 ms
+2023-03-31 09:20:16:2016 info: Connected to database: ttrans
+2023-03-31 09:20:16:2016 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:20:39:2039 info: Connected to database: ttrans
+2023-03-31 09:20:39:2039 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:20:42:2042 http: POST /api/transactions 200 - - 41.853 ms
+2023-03-31 09:22:09:229 info: Connected to database: ttrans
+2023-03-31 09:22:09:229 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:22:12:2212 http: POST /api/transactions 200 - - 40.814 ms
+2023-03-31 09:23:59:2359 info: Connected to database: ttrans
+2023-03-31 09:23:59:2359 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:24:35:2435 info: Connected to database: ttrans
+2023-03-31 09:24:35:2435 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:24:42:2442 http: POST /api/transactions 200 - - 40.428 ms
+2023-03-31 09:25:47:2547 info: Connected to database: ttrans
+2023-03-31 09:25:47:2547 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:25:49:2549 http: POST /api/transactions 200 - - 45.083 ms
+2023-03-31 09:26:37:2637 info: Connected to database: ttrans
+2023-03-31 09:26:37:2637 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:27:25:2725 info: Connected to database: ttrans
+2023-03-31 09:27:25:2725 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:27:28:2728 http: POST /api/transactions 200 - - 43.492 ms
+2023-03-31 09:35:00:350 info: Connected to database: ttrans
+2023-03-31 09:35:00:350 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:36:07:367 info: Connected to database: ttrans
+2023-03-31 09:36:07:367 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:36:09:369 info: Connected to database: ttrans
+2023-03-31 09:36:09:369 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:36:11:3611 info: Connected to database: ttrans
+2023-03-31 09:36:11:3611 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:37:06:376 info: Connected to database: ttrans
+2023-03-31 09:37:06:376 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:37:30:3730 info: Connected to database: ttrans
+2023-03-31 09:37:30:3730 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:37:58:3758 info: Connected to database: ttrans
+2023-03-31 09:37:58:3758 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:38:02:382 error: jwt expired
+2023-03-31 09:38:02:382 http: POST /api/transactions 401 705 - 35.326 ms
+2023-03-31 09:38:07:387 http: POST /api/login 200 288 - 492.538 ms
+2023-03-31 09:38:22:3822 http: POST /api/transactions 200 - - 11.557 ms
+2023-03-31 09:39:08:398 info: Connected to database: ttrans
+2023-03-31 09:39:08:398 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:39:53:3953 http: POST /api/transactions 200 - - 43.353 ms
+2023-03-31 09:41:43:4143 info: Connected to database: ttrans
+2023-03-31 09:41:43:4143 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:41:51:4151 http: POST /api/transactions 200 - - 42.996 ms
+2023-03-31 09:43:12:4312 info: Connected to database: ttrans
+2023-03-31 09:43:12:4312 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:43:23:4323 info: Connected to database: ttrans
+2023-03-31 09:43:23:4323 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:44:43:4443 info: Connected to database: ttrans
+2023-03-31 09:44:43:4443 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:44:54:4454 http: POST /api/transactions 201 47 - 42.872 ms
+2023-03-31 09:45:19:4519 info: Connected to database: ttrans
+2023-03-31 09:45:19:4519 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:45:46:4546 info: Connected to database: ttrans
+2023-03-31 09:45:46:4546 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:45:55:4555 info: Connected to database: ttrans
+2023-03-31 09:45:55:4555 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:46:01:461 http: POST /api/transactions 201 47 - 45.281 ms
+2023-03-31 09:46:13:4613 info: Connected to database: ttrans
+2023-03-31 09:46:13:4613 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:46:17:4617 http: POST /api/transactions 201 47 - 40.196 ms
+2023-03-31 09:50:17:5017 info: Connected to database: ttrans
+2023-03-31 09:50:17:5017 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:50:57:5057 info: Connected to database: ttrans
+2023-03-31 09:50:57:5057 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:51:53:5153 info: Connected to database: ttrans
+2023-03-31 09:51:53:5153 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:52:15:5215 info: Connected to database: ttrans
+2023-03-31 09:52:15:5215 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:52:17:5217 http: POST /api/transactions 201 47 - 39.918 ms
+2023-03-31 09:53:47:5347 info: Connected to database: ttrans
+2023-03-31 09:53:47:5347 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:54:25:5425 info: Connected to database: ttrans
+2023-03-31 09:54:25:5425 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:54:36:5436 error: jwt expired
+2023-03-31 09:54:36:5436 http: POST /api/transactions 401 705 - 46.896 ms
+2023-03-31 09:55:05:555 http: POST /api/login 200 288 - 490.435 ms
+2023-03-31 09:55:23:5523 http: POST /api/transactions 200 47 - 14.204 ms
+2023-03-31 09:55:58:5558 info: Connected to database: ttrans
+2023-03-31 09:55:58:5558 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:57:52:5752 info: Connected to database: ttrans
+2023-03-31 09:57:52:5752 info: Server ready at: http://localhost:8081/api
+2023-03-31 09:58:35:5835 info: Connected to database: ttrans
+2023-03-31 09:58:35:5835 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:00:31:031 info: Connected to database: ttrans
+2023-03-31 10:00:31:031 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:02:53:253 info: Connected to database: ttrans
+2023-03-31 10:02:53:253 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:04:20:420 info: Connected to database: ttrans
+2023-03-31 10:04:20:420 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:04:25:425 info: Connected to database: ttrans
+2023-03-31 10:04:25:425 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:06:04:64 info: Connected to database: ttrans
+2023-03-31 10:06:04:64 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:06:11:611 info: Connected to database: ttrans
+2023-03-31 10:06:11:611 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:06:49:649 info: Connected to database: ttrans
+2023-03-31 10:06:49:649 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:07:02:72 info: Connected to database: ttrans
+2023-03-31 10:07:02:72 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:07:16:716 info: Connected to database: ttrans
+2023-03-31 10:07:16:716 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:07:35:735 info: Connected to database: ttrans
+2023-03-31 10:07:35:735 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:07:43:743 info: Connected to database: ttrans
+2023-03-31 10:07:43:743 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:07:47:747 http: POST /api/transactions 200 47 - 41.100 ms
+2023-03-31 10:09:50:950 info: Connected to database: ttrans
+2023-03-31 10:09:50:950 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:09:52:952 info: Connected to database: ttrans
+2023-03-31 10:09:52:952 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:09:54:954 http: POST /api/transactions 200 47 - 39.896 ms
+2023-03-31 10:11:31:1131 info: Connected to database: ttrans
+2023-03-31 10:11:31:1131 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:12:50:1250 info: Connected to database: ttrans
+2023-03-31 10:12:50:1250 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:12:52:1252 error: jwt expired
+2023-03-31 10:12:52:1252 http: POST /api/transactions 401 705 - 36.897 ms
+2023-03-31 10:13:08:138 http: POST /api/login 200 288 - 498.469 ms
+2023-03-31 10:13:35:1335 http: POST /api/transactions - - - - ms
+2023-03-31 10:13:40:1340 info: Connected to database: ttrans
+2023-03-31 10:13:40:1340 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:13:42:1342 http: POST /api/transactions 200 47 - 41.295 ms
+2023-03-31 10:14:04:144 info: Connected to database: ttrans
+2023-03-31 10:14:04:144 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:14:13:1413 http: POST /api/transactions - - - - ms
+2023-03-31 10:14:18:1418 info: Connected to database: ttrans
+2023-03-31 10:14:18:1418 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:15:54:1554 info: Connected to database: ttrans
+2023-03-31 10:15:54:1554 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:16:25:1625 info: Connected to database: ttrans
+2023-03-31 10:16:25:1625 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:16:26:1626 http: POST /api/transactions 400 70 - 51.476 ms
+2023-03-31 10:18:51:1851 http: POST /api/transactions 201 33 - 28.878 ms
+2023-03-31 10:19:25:1925 info: Connected to database: ttrans
+2023-03-31 10:19:25:1925 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:19:56:1956 http: POST /api/transactions 201 54 - 69.037 ms
+2023-03-31 10:20:40:2040 http: POST /api/transactions 201 54 - 25.214 ms
+2023-03-31 10:20:46:2046 http: POST /api/transactions 201 54 - 31.125 ms
+2023-03-31 10:20:47:2047 http: POST /api/transactions 201 54 - 12.756 ms
+2023-03-31 10:20:50:2050 http: POST /api/transactions 400 59 - 8.389 ms
+2023-03-31 10:20:51:2051 http: POST /api/transactions 400 59 - 7.110 ms
+2023-03-31 10:22:22:2222 http: POST /api/transactions 201 54 - 14.046 ms
+2023-03-31 10:22:28:2228 http: POST /api/transactions 201 54 - 11.841 ms
+2023-03-31 10:22:49:2249 http: POST /api/transactions 201 54 - 13.419 ms
+2023-03-31 10:22:49:2249 http: POST /api/transactions 201 54 - 13.012 ms
+2023-03-31 10:22:50:2250 http: POST /api/transactions 400 84 - 7.562 ms
+2023-03-31 10:22:50:2250 http: POST /api/transactions 400 84 - 7.045 ms
+2023-03-31 10:24:44:2444 http: POST /api/transactions 400 70 - 8.367 ms
+2023-03-31 10:26:57:2657 info: Connected to database: ttrans
+2023-03-31 10:26:57:2657 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:27:04:274 error: ValidationError: "ammount" is required
+2023-03-31 10:27:04:274 http: POST /api/transactions 400 815 - 45.462 ms
+2023-03-31 10:28:03:283 info: Connected to database: ttrans
+2023-03-31 10:28:03:283 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:28:29:2829 error: jwt expired
+2023-03-31 10:28:29:2829 http: POST /api/transactions 401 705 - 44.051 ms
+2023-03-31 10:28:40:2840 info: Connected to database: ttrans
+2023-03-31 10:28:40:2840 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:28:45:2845 error: jwt expired
+2023-03-31 10:28:45:2845 http: POST /api/transactions 401 705 - 39.559 ms
+2023-03-31 10:28:52:2852 http: POST /api/login 200 288 - 511.392 ms
+2023-03-31 10:29:18:2918 error: ValidationError: "ammount" is required
+2023-03-31 10:29:18:2918 http: POST /api/transactions 400 815 - 17.983 ms
+2023-03-31 10:29:24:2924 error: Not Found - /home/anandan/wrk/transac/src/services/crud.service.ts:20:32)
+2023-03-31 10:29:24:2924 http: GET /home/anandan/wrk/transac/src/services/crud.service.ts:20:32) 404 - - 27.337 ms
+2023-03-31 10:29:25:2925 error: Not Found - /favicon.ico
+2023-03-31 10:29:25:2925 http: GET /favicon.ico 404 986 - 1.318 ms
+2023-03-31 10:29:57:2957 info: Connected to database: ttrans
+2023-03-31 10:29:57:2957 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:30:00:300 http: POST /api/transactions 400 70 - 53.451 ms
+2023-03-31 10:33:10:3310 info: Connected to database: ttrans
+2023-03-31 10:33:10:3310 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:37:48:3748 info: Connected to database: ttrans
+2023-03-31 10:37:48:3748 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:38:10:3810 http: POST /api/transactions 201 236 - 74.838 ms
+2023-03-31 10:46:02:462 info: Connected to database: ttrans
+2023-03-31 10:46:02:462 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:49:22:4922 info: Connected to database: ttrans
+2023-03-31 10:49:22:4922 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:52:32:5232 info: Connected to database: ttrans
+2023-03-31 10:52:32:5232 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:52:37:5237 info: Connected to database: ttrans
+2023-03-31 10:52:37:5237 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:56:07:567 info: Connected to database: ttrans
+2023-03-31 10:56:07:567 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:56:23:5623 info: Connected to database: ttrans
+2023-03-31 10:56:23:5623 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:57:22:5722 info: Connected to database: ttrans
+2023-03-31 10:57:22:5722 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:57:57:5757 info: Connected to database: ttrans
+2023-03-31 10:57:57:5757 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:58:16:5816 info: Connected to database: ttrans
+2023-03-31 10:58:16:5816 info: Server ready at: http://localhost:8081/api
+2023-03-31 10:58:35:5835 info: Connected to database: ttrans
+2023-03-31 10:58:35:5835 info: Server ready at: http://localhost:8081/api
+2023-03-31 11:26:15:2615 info: Connected to database: ttrans
+2023-03-31 11:26:15:2615 info: Server ready at: http://localhost:8081/api
+2023-03-31 11:27:12:2712 info: Connected to database: ttrans
+2023-03-31 11:27:12:2712 info: Server ready at: http://localhost:8081/api
+2023-03-31 11:28:23:2823 info: Connected to database: ttrans
+2023-03-31 11:28:23:2823 info: Server ready at: http://localhost:8081/api
+2023-03-31 11:28:30:2830 error: jwt expired
+2023-03-31 11:28:30:2830 http: POST /api/transactions 401 705 - 38.731 ms
+2023-03-31 11:28:46:2846 error: jwt expired
+2023-03-31 11:28:46:2846 http: POST /api/transactions 401 705 - 5.278 ms
+2023-03-31 11:28:55:2855 http: POST /api/login 200 288 - 511.519 ms
+2023-03-31 11:29:21:2921 http: POST /api/transactions 201 98 - 18.209 ms
+2023-03-31 11:29:36:2936 http: POST /api/transactions 201 96 - 8.413 ms
+2023-03-31 11:29:41:2941 http: POST /api/transactions - - - - ms
+2023-03-31 11:31:37:3137 info: Connected to database: ttrans
+2023-03-31 11:31:37:3137 info: Server ready at: http://localhost:8081/api
+2023-03-31 11:34:05:345 info: Connected to database: ttrans
+2023-03-31 11:34:05:345 info: Server ready at: http://localhost:8081/api
+2023-03-31 11:34:29:3429 info: Connected to database: ttrans
+2023-03-31 11:34:29:3429 info: Server ready at: http://localhost:8081/api
+2023-03-31 11:36:20:3620 info: Connected to database: ttrans
+2023-03-31 11:36:20:3620 info: Server ready at: http://localhost:8081/api
+2023-03-31 11:39:52:3952 info: Connected to database: ttrans
+2023-03-31 11:39:52:3952 info: Server ready at: http://localhost:8081/api
+2023-03-31 11:40:17:4017 info: Connected to database: ttrans
+2023-03-31 11:40:17:4017 info: Server ready at: http://localhost:8081/api
+2023-03-31 11:40:51:4051 info: Connected to database: ttrans
+2023-03-31 11:40:51:4051 info: Server ready at: http://localhost:8081/api
+2023-03-31 11:40:56:4056 http: POST /api/transactions 400 59 - 52.791 ms
+2023-03-31 11:41:22:4122 http: POST /api/transactions 201 99 - 14.763 ms
+2023-03-31 11:41:30:4130 http: POST /api/transactions 201 99 - 10.510 ms
+2023-03-31 11:41:33:4133 http: POST /api/transactions 201 99 - 7.923 ms
+2023-03-31 11:42:00:420 info: Connected to database: ttrans
+2023-03-31 11:42:00:420 info: Server ready at: http://localhost:8081/api
+2023-03-31 11:48:15:4815 info: Connected to database: ttrans
+2023-03-31 11:48:15:4815 info: Server ready at: http://localhost:8081/api
+2023-03-31 11:48:40:4840 info: Connected to database: ttrans
+2023-03-31 11:48:40:4840 info: Server ready at: http://localhost:8081/api
+2023-03-31 11:48:44:4844 info: Connected to database: ttrans
+2023-03-31 11:48:44:4844 info: Server ready at: http://localhost:8081/api
+2023-03-31 11:48:47:4847 info: Connected to database: ttrans
+2023-03-31 11:48:47:4847 info: Server ready at: http://localhost:8081/api
+2023-03-31 11:48:49:4849 info: Connected to database: ttrans
+2023-03-31 11:48:49:4849 info: Server ready at: http://localhost:8081/api
+2023-03-31 11:48:54:4854 info: Connected to database: ttrans
+2023-03-31 11:48:54:4854 info: Server ready at: http://localhost:8081/api
+2023-03-31 11:48:57:4857 info: Connected to database: ttrans
+2023-03-31 11:48:57:4857 info: Server ready at: http://localhost:8081/api
+2023-03-31 11:49:01:491 error: jwt expired
+2023-03-31 11:49:01:491 http: POST /api/transactions 401 705 - 36.065 ms
+2023-03-31 11:49:28:4928 http: POST /api/login 200 288 - 503.129 ms
+2023-03-31 11:50:04:504 http: POST /api/transactions 201 99 - 15.028 ms
+2023-03-31 11:50:25:5025 info: Connected to database: ttrans
+2023-03-31 11:50:25:5025 info: Server ready at: http://localhost:8081/api
+2023-03-31 11:50:27:5027 http: POST /api/transactions 500 21 - 52.642 ms
+2023-03-31 11:51:09:519 info: Connected to database: ttrans
+2023-03-31 11:51:09:519 info: Server ready at: http://localhost:8081/api
+2023-03-31 11:51:13:5113 http: POST /api/transactions 201 99 - 56.949 ms
+2023-03-31 11:51:38:5138 http: POST /api/transactions 400 99 - 11.950 ms
+2023-03-31 11:52:00:520 info: Connected to database: ttrans
+2023-03-31 11:52:00:520 info: Server ready at: http://localhost:8081/api
+2023-03-31 11:52:04:524 http: POST /api/transactions 400 99 - 54.230 ms
+2023-03-31 11:52:25:5225 info: Connected to database: ttrans
+2023-03-31 11:52:25:5225 info: Server ready at: http://localhost:8081/api
+2023-03-31 11:52:31:5231 info: Connected to database: ttrans
+2023-03-31 11:52:31:5231 info: Server ready at: http://localhost:8081/api
+2023-03-31 11:53:03:533 info: Connected to database: ttrans
+2023-03-31 11:53:03:533 info: Server ready at: http://localhost:8081/api
+2023-03-31 11:53:07:537 info: Connected to database: ttrans
+2023-03-31 11:53:07:537 info: Server ready at: http://localhost:8081/api
+2023-03-31 11:53:12:5312 http: POST /api/transactions 400 99 - 52.336 ms
+2023-03-31 11:54:30:5430 info: Connected to database: ttrans
+2023-03-31 11:54:30:5430 info: Server ready at: http://localhost:8081/api
+2023-03-31 11:55:13:5513 info: Connected to database: ttrans
+2023-03-31 11:55:13:5513 info: Server ready at: http://localhost:8081/api
+2023-03-31 11:55:17:5517 http: POST /api/transactions 400 99 - 52.634 ms
+2023-03-31 11:57:27:5727 info: Connected to database: ttrans
+2023-03-31 11:57:27:5727 info: Server ready at: http://localhost:8081/api
+2023-03-31 11:57:30:5730 info: Connected to database: ttrans
+2023-03-31 11:57:30:5730 info: Server ready at: http://localhost:8081/api
+2023-03-31 11:57:32:5732 http: POST /api/transactions 500 31 - 50.097 ms
+2023-03-31 11:58:40:5840 info: Connected to database: ttrans
+2023-03-31 11:58:40:5840 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:00:08:08 info: Connected to database: ttrans
+2023-03-31 12:00:08:08 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:00:32:032 info: Connected to database: ttrans
+2023-03-31 12:00:32:032 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:00:51:051 info: Connected to database: ttrans
+2023-03-31 12:00:51:051 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:01:07:17 info: Connected to database: ttrans
+2023-03-31 12:01:07:17 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:01:11:111 info: Connected to database: ttrans
+2023-03-31 12:01:11:111 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:01:18:118 info: Connected to database: ttrans
+2023-03-31 12:01:18:118 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:01:25:125 info: Connected to database: ttrans
+2023-03-31 12:01:25:125 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:02:55:255 info: Connected to database: ttrans
+2023-03-31 12:02:55:255 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:03:50:350 info: Connected to database: ttrans
+2023-03-31 12:03:50:350 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:04:06:46 http: POST /api/transactions - - - - ms
+2023-03-31 12:04:29:429 info: Connected to database: ttrans
+2023-03-31 12:04:29:429 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:05:12:512 info: Connected to database: ttrans
+2023-03-31 12:05:12:512 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:08:32:832 info: Connected to database: ttrans
+2023-03-31 12:08:32:832 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:08:35:835 info: Connected to database: ttrans
+2023-03-31 12:08:35:835 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:08:41:841 error: jwt expired
+2023-03-31 12:08:41:841 http: POST /api/transactions 401 705 - 40.635 ms
+2023-03-31 12:08:49:849 http: POST /api/login 200 288 - 497.503 ms
+2023-03-31 12:09:06:96 http: POST /api/transactions 400 31 - 14.671 ms
+2023-03-31 12:09:09:99 http: POST /api/transactions 400 31 - 9.539 ms
+2023-03-31 12:09:10:910 http: POST /api/transactions 400 31 - 8.354 ms
+2023-03-31 12:09:10:910 http: POST /api/transactions 400 31 - 7.296 ms
+2023-03-31 12:09:11:911 http: POST /api/transactions 400 31 - 10.317 ms
+2023-03-31 12:09:12:912 http: POST /api/transactions 400 31 - 7.792 ms
+2023-03-31 12:09:42:942 http: POST /api/transactions 400 99 - 9.386 ms
+2023-03-31 12:11:54:1154 info: Connected to database: ttrans
+2023-03-31 12:11:54:1154 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:11:57:1157 info: Connected to database: ttrans
+2023-03-31 12:11:57:1157 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:11:58:1158 http: POST /api/transactions 400 99 - 53.675 ms
+2023-03-31 12:13:34:1334 info: Connected to database: ttrans
+2023-03-31 12:13:34:1334 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:13:50:1350 http: POST /api/transactions 400 99 - 54.533 ms
+2023-03-31 12:14:09:149 info: Connected to database: ttrans
+2023-03-31 12:14:09:149 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:14:20:1420 http: POST /api/transactions 400 99 - 67.948 ms
+2023-03-31 12:18:43:1843 info: Connected to database: ttrans
+2023-03-31 12:18:43:1843 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:18:50:1850 http: POST /api/transactions 400 84 - 52.363 ms
+2023-03-31 12:18:53:1853 http: POST /api/transactions 400 84 - 15.722 ms
+2023-03-31 12:18:54:1854 http: POST /api/transactions 400 84 - 11.728 ms
+2023-03-31 12:18:55:1855 http: POST /api/transactions 400 84 - 9.711 ms
+2023-03-31 12:18:55:1855 http: POST /api/transactions 400 84 - 7.875 ms
+2023-03-31 12:19:05:195 error: ValidationError: "from" length must be 24 characters long
+2023-03-31 12:19:05:195 http: POST /api/transactions 400 853 - 26.998 ms
+2023-03-31 12:19:10:1910 http: POST /api/transactions 400 84 - 15.424 ms
+2023-03-31 12:20:03:203 http: POST /api/transactions 201 99 - 11.510 ms
+2023-03-31 12:20:04:204 http: POST /api/transactions 201 99 - 11.229 ms
+2023-03-31 12:20:07:207 http: POST /api/transactions 201 99 - 12.232 ms
+2023-03-31 12:20:08:208 http: POST /api/transactions 201 99 - 7.814 ms
+2023-03-31 12:20:09:209 http: POST /api/transactions 201 99 - 8.515 ms
+2023-03-31 12:20:10:2010 http: POST /api/transactions 201 99 - 7.763 ms
+2023-03-31 12:20:11:2011 http: POST /api/transactions 201 99 - 6.894 ms
+2023-03-31 12:20:12:2012 http: POST /api/transactions 201 99 - 7.526 ms
+2023-03-31 12:20:13:2013 http: POST /api/transactions 201 99 - 7.508 ms
+2023-03-31 12:20:14:2014 http: POST /api/transactions 201 99 - 7.736 ms
+2023-03-31 12:20:14:2014 http: POST /api/transactions 400 84 - 7.458 ms
+2023-03-31 12:20:15:2015 http: POST /api/transactions 400 84 - 12.368 ms
+2023-03-31 12:20:15:2015 http: POST /api/transactions 400 84 - 7.168 ms
+2023-03-31 12:20:29:2029 http: POST /api/transactions 201 99 - 7.981 ms
+2023-03-31 12:20:31:2031 http: POST /api/transactions 201 99 - 8.877 ms
+2023-03-31 12:20:31:2031 http: POST /api/transactions 201 99 - 7.290 ms
+2023-03-31 12:20:32:2032 http: POST /api/transactions 201 99 - 7.460 ms
+2023-03-31 12:20:33:2033 http: POST /api/transactions 201 99 - 8.190 ms
+2023-03-31 12:20:34:2034 http: POST /api/transactions 201 99 - 6.079 ms
+2023-03-31 12:20:34:2034 http: POST /api/transactions 201 99 - 7.224 ms
+2023-03-31 12:20:35:2035 http: POST /api/transactions 201 99 - 8.476 ms
+2023-03-31 12:20:35:2035 http: POST /api/transactions 201 99 - 7.198 ms
+2023-03-31 12:20:36:2036 http: POST /api/transactions 201 99 - 6.433 ms
+2023-03-31 12:20:36:2036 http: POST /api/transactions 201 99 - 7.457 ms
+2023-03-31 12:20:37:2037 http: POST /api/transactions 201 99 - 8.208 ms
+2023-03-31 12:20:38:2038 http: POST /api/transactions 201 99 - 6.304 ms
+2023-03-31 12:20:39:2039 http: POST /api/transactions 201 99 - 6.926 ms
+2023-03-31 12:20:39:2039 http: POST /api/transactions 201 99 - 6.684 ms
+2023-03-31 12:20:40:2040 http: POST /api/transactions 201 99 - 7.096 ms
+2023-03-31 12:20:41:2041 http: POST /api/transactions 201 99 - 7.299 ms
+2023-03-31 12:20:42:2042 http: POST /api/transactions 201 99 - 6.814 ms
+2023-03-31 12:20:42:2042 http: POST /api/transactions 201 99 - 7.600 ms
+2023-03-31 12:20:43:2043 http: POST /api/transactions 201 99 - 8.926 ms
+2023-03-31 12:20:44:2044 http: POST /api/transactions 201 99 - 6.243 ms
+2023-03-31 12:20:45:2045 http: POST /api/transactions 201 99 - 6.130 ms
+2023-03-31 12:20:45:2045 http: POST /api/transactions 201 99 - 6.574 ms
+2023-03-31 12:20:46:2046 http: POST /api/transactions 201 99 - 6.362 ms
+2023-03-31 12:20:47:2047 http: POST /api/transactions 201 99 - 5.840 ms
+2023-03-31 12:20:47:2047 http: POST /api/transactions 201 99 - 7.560 ms
+2023-03-31 12:20:48:2048 http: POST /api/transactions 201 99 - 6.194 ms
+2023-03-31 12:20:49:2049 http: POST /api/transactions 201 99 - 9.091 ms
+2023-03-31 12:20:49:2049 http: POST /api/transactions 201 99 - 8.355 ms
+2023-03-31 12:20:50:2050 http: POST /api/transactions 201 99 - 5.829 ms
+2023-03-31 12:20:51:2051 http: POST /api/transactions 201 99 - 6.850 ms
+2023-03-31 12:20:52:2052 http: POST /api/transactions 201 99 - 7.114 ms
+2023-03-31 12:20:53:2053 http: POST /api/transactions 201 99 - 7.589 ms
+2023-03-31 12:20:53:2053 http: POST /api/transactions 400 84 - 8.289 ms
+2023-03-31 12:20:54:2054 http: POST /api/transactions 400 84 - 5.554 ms
+2023-03-31 12:21:09:219 http: POST /api/transactions 400 31 - 7.695 ms
+2023-03-31 12:21:21:2121 http: POST /api/transactions 400 31 - 7.365 ms
+2023-03-31 12:21:32:2132 http: POST /api/transactions 400 70 - 7.152 ms
+2023-03-31 12:21:45:2145 http: POST /api/transactions 201 99 - 5.912 ms
+2023-03-31 12:21:46:2146 http: POST /api/transactions 201 99 - 8.978 ms
+2023-03-31 12:21:47:2147 http: POST /api/transactions 201 99 - 19.586 ms
+2023-03-31 12:21:47:2147 http: POST /api/transactions 201 99 - 6.474 ms
+2023-03-31 12:21:48:2148 http: POST /api/transactions 201 99 - 7.055 ms
+2023-03-31 12:21:48:2148 http: POST /api/transactions 201 99 - 8.320 ms
+2023-03-31 12:21:49:2149 http: POST /api/transactions 201 99 - 6.105 ms
+2023-03-31 12:21:49:2149 http: POST /api/transactions 201 98 - 10.885 ms
+2023-03-31 12:21:50:2150 http: POST /api/transactions 201 98 - 6.417 ms
+2023-03-31 12:21:51:2151 http: POST /api/transactions 201 98 - 6.438 ms
+2023-03-31 12:21:52:2152 http: POST /api/transactions 201 98 - 13.597 ms
+2023-03-31 12:21:52:2152 http: POST /api/transactions 201 98 - 7.413 ms
+2023-03-31 12:21:53:2153 http: POST /api/transactions 201 98 - 10.299 ms
+2023-03-31 12:21:53:2153 http: POST /api/transactions 201 98 - 6.278 ms
+2023-03-31 12:21:54:2154 http: POST /api/transactions 201 98 - 6.774 ms
+2023-03-31 12:21:55:2155 http: POST /api/transactions 201 98 - 8.386 ms
+2023-03-31 12:21:55:2155 http: POST /api/transactions 201 96 - 5.924 ms
+2023-03-31 12:21:56:2156 http: POST /api/transactions 400 59 - 7.888 ms
+2023-03-31 12:23:37:2337 http: POST /api/transactions 400 59 - 8.059 ms
+2023-03-31 12:24:12:2412 error: jwt expired
+2023-03-31 12:24:12:2412 http: POST /api/transactions 401 705 - 6.809 ms
+2023-03-31 12:24:25:2425 http: POST /api/login 200 288 - 470.123 ms
+2023-03-31 12:24:41:2441 http: POST /api/transactions 201 99 - 8.069 ms
+2023-03-31 12:24:43:2443 http: POST /api/transactions 201 99 - 8.710 ms
+2023-03-31 12:24:44:2444 http: POST /api/transactions 201 99 - 6.851 ms
+2023-03-31 12:24:45:2445 http: POST /api/transactions 201 99 - 7.755 ms
+2023-03-31 12:24:47:2447 http: POST /api/transactions 201 99 - 7.495 ms
+2023-03-31 12:24:52:2452 http: POST /api/transactions 201 99 - 6.758 ms
+2023-03-31 12:24:53:2453 http: POST /api/transactions 201 99 - 12.344 ms
+2023-03-31 12:24:53:2453 http: POST /api/transactions 201 99 - 6.150 ms
+2023-03-31 12:24:54:2454 http: POST /api/transactions 201 99 - 7.153 ms
+2023-03-31 12:24:55:2455 http: POST /api/transactions 201 99 - 6.414 ms
+2023-03-31 12:24:56:2456 http: POST /api/transactions 201 99 - 6.301 ms
+2023-03-31 12:25:01:251 http: POST /api/transactions 201 99 - 5.891 ms
+2023-03-31 12:25:02:252 http: POST /api/transactions 201 99 - 7.373 ms
+2023-03-31 12:25:03:253 http: POST /api/transactions 201 99 - 6.195 ms
+2023-03-31 12:25:03:253 http: POST /api/transactions 201 99 - 6.823 ms
+2023-03-31 12:25:04:254 http: POST /api/transactions 201 99 - 8.017 ms
+2023-03-31 12:25:05:255 http: POST /api/transactions 201 99 - 6.793 ms
+2023-03-31 12:25:05:255 http: POST /api/transactions 201 99 - 6.193 ms
+2023-03-31 12:25:06:256 http: POST /api/transactions 400 84 - 6.277 ms
+2023-03-31 12:29:46:2946 info: Connected to database: ttrans
+2023-03-31 12:29:46:2946 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:29:57:2957 info: Connected to database: ttrans
+2023-03-31 12:29:57:2957 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:31:01:311 info: Connected to database: ttrans
+2023-03-31 12:31:01:311 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:31:04:314 http: POST /api/transactions 400 84 - 52.659 ms
+2023-03-31 12:31:21:3121 http: POST /api/transactions 201 138 - 17.906 ms
+2023-03-31 12:31:23:3123 http: POST /api/transactions 201 138 - 9.948 ms
+2023-03-31 12:31:24:3124 http: POST /api/transactions 201 138 - 9.717 ms
+2023-03-31 12:31:25:3125 http: POST /api/transactions 201 138 - 11.089 ms
+2023-03-31 12:31:25:3125 http: POST /api/transactions 201 138 - 8.685 ms
+2023-03-31 12:31:26:3126 http: POST /api/transactions 201 138 - 7.892 ms
+2023-03-31 12:32:03:323 info: Connected to database: ttrans
+2023-03-31 12:32:03:323 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:32:05:325 http: POST /api/transactions 201 99 - 54.259 ms
+2023-03-31 12:32:17:3217 info: Connected to database: ttrans
+2023-03-31 12:32:17:3217 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:32:18:3218 http: POST /api/transactions 201 138 - 58.459 ms
+2023-03-31 12:32:38:3238 http: POST /api/transactions 201 138 - 11.522 ms
+2023-03-31 12:32:38:3238 http: POST /api/transactions 201 138 - 10.508 ms
+2023-03-31 12:32:39:3239 http: POST /api/transactions 201 138 - 8.160 ms
+2023-03-31 12:32:40:3240 http: POST /api/transactions 201 138 - 8.697 ms
+2023-03-31 12:32:53:3253 info: Connected to database: ttrans
+2023-03-31 12:32:53:3253 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:32:54:3254 info: Connected to database: ttrans
+2023-03-31 12:32:54:3254 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:33:00:330 info: Connected to database: ttrans
+2023-03-31 12:33:00:330 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:33:27:3327 http: POST /api/transactions 201 138 - 55.900 ms
+2023-03-31 12:33:27:3327 http: POST /api/transactions 201 138 - 10.732 ms
+2023-03-31 12:33:28:3328 http: POST /api/transactions 201 138 - 19.335 ms
+2023-03-31 12:33:29:3329 http: POST /api/transactions 201 138 - 9.237 ms
+2023-03-31 12:33:29:3329 http: POST /api/transactions 201 138 - 10.828 ms
+2023-03-31 12:33:29:3329 http: POST /api/transactions 201 138 - 9.693 ms
+2023-03-31 12:33:30:3330 http: POST /api/transactions 201 138 - 9.567 ms
+2023-03-31 12:33:31:3331 http: POST /api/transactions 201 138 - 7.900 ms
+2023-03-31 12:33:31:3331 http: POST /api/transactions 201 138 - 9.755 ms
+2023-03-31 12:33:32:3332 http: POST /api/transactions 201 138 - 7.057 ms
+2023-03-31 12:33:33:3333 http: POST /api/transactions 201 138 - 11.117 ms
+2023-03-31 12:33:33:3333 http: POST /api/transactions 201 138 - 8.775 ms
+2023-03-31 12:33:34:3334 http: POST /api/transactions 400 84 - 6.561 ms
+2023-03-31 12:37:07:377 http: POST /api/transactions 201 99 - 7.097 ms
+2023-03-31 12:37:08:378 http: POST /api/transactions 201 138 - 9.573 ms
+2023-03-31 12:37:09:379 http: POST /api/transactions 201 138 - 8.603 ms
+2023-03-31 12:37:10:3710 http: POST /api/transactions 201 138 - 7.019 ms
+2023-03-31 12:37:11:3711 http: POST /api/transactions 201 138 - 7.748 ms
+2023-03-31 12:37:11:3711 http: POST /api/transactions 201 138 - 6.553 ms
+2023-03-31 12:37:12:3712 http: POST /api/transactions 201 138 - 12.524 ms
+2023-03-31 12:37:12:3712 http: POST /api/transactions 201 138 - 8.372 ms
+2023-03-31 12:37:13:3713 http: POST /api/transactions 201 138 - 6.926 ms
+2023-03-31 12:37:13:3713 http: POST /api/transactions 201 138 - 8.596 ms
+2023-03-31 12:37:14:3714 http: POST /api/transactions 201 138 - 9.405 ms
+2023-03-31 12:37:14:3714 http: POST /api/transactions 201 138 - 8.634 ms
+2023-03-31 12:37:15:3715 http: POST /api/transactions 201 138 - 7.530 ms
+2023-03-31 12:37:15:3715 http: POST /api/transactions 201 138 - 7.331 ms
+2023-03-31 12:37:16:3716 http: POST /api/transactions 201 138 - 6.986 ms
+2023-03-31 12:37:16:3716 http: POST /api/transactions 201 138 - 7.690 ms
+2023-03-31 12:37:17:3717 http: POST /api/transactions 201 138 - 6.898 ms
+2023-03-31 12:37:18:3718 http: POST /api/transactions 201 138 - 7.994 ms
+2023-03-31 12:37:18:3718 http: POST /api/transactions 201 138 - 10.393 ms
+2023-03-31 12:37:18:3718 http: POST /api/transactions 201 138 - 6.746 ms
+2023-03-31 12:37:19:3719 http: POST /api/transactions 201 138 - 8.361 ms
+2023-03-31 12:37:19:3719 http: POST /api/transactions 201 138 - 6.114 ms
+2023-03-31 12:37:20:3720 http: POST /api/transactions 201 138 - 6.727 ms
+2023-03-31 12:37:21:3721 http: POST /api/transactions 201 138 - 6.487 ms
+2023-03-31 12:37:21:3721 http: POST /api/transactions 201 138 - 6.778 ms
+2023-03-31 12:37:22:3722 http: POST /api/transactions 201 138 - 7.699 ms
+2023-03-31 12:37:22:3722 http: POST /api/transactions 201 138 - 9.840 ms
+2023-03-31 12:37:23:3723 http: POST /api/transactions 201 138 - 10.310 ms
+2023-03-31 12:37:23:3723 http: POST /api/transactions 201 138 - 11.151 ms
+2023-03-31 12:37:24:3724 http: POST /api/transactions 201 138 - 6.846 ms
+2023-03-31 12:37:25:3725 http: POST /api/transactions 201 138 - 6.739 ms
+2023-03-31 12:37:26:3726 http: POST /api/transactions 201 138 - 6.199 ms
+2023-03-31 12:37:27:3727 http: POST /api/transactions 201 138 - 6.087 ms
+2023-03-31 12:37:27:3727 http: POST /api/transactions 201 138 - 6.045 ms
+2023-03-31 12:37:28:3728 http: POST /api/transactions 201 138 - 6.614 ms
+2023-03-31 12:37:29:3729 http: POST /api/transactions 201 138 - 6.874 ms
+2023-03-31 12:37:29:3729 http: POST /api/transactions 201 138 - 6.487 ms
+2023-03-31 12:37:30:3730 http: POST /api/transactions 201 138 - 6.035 ms
+2023-03-31 12:37:31:3731 http: POST /api/transactions 201 138 - 7.007 ms
+2023-03-31 12:37:32:3732 http: POST /api/transactions 201 138 - 6.140 ms
+2023-03-31 12:37:32:3732 http: POST /api/transactions 201 137 - 7.059 ms
+2023-03-31 12:37:33:3733 http: POST /api/transactions 201 137 - 8.121 ms
+2023-03-31 12:37:34:3734 http: POST /api/transactions 201 137 - 7.161 ms
+2023-03-31 12:37:36:3736 http: POST /api/transactions 201 137 - 6.117 ms
+2023-03-31 12:37:57:3757 http: POST /api/transactions 400 84 - 8.085 ms
+2023-03-31 12:39:01:391 http: POST /api/transactions 201 137 - 6.336 ms
+2023-03-31 12:39:02:392 http: POST /api/transactions 201 137 - 7.733 ms
+2023-03-31 12:42:15:4215 info: Connected to database: ttrans
+2023-03-31 12:42:15:4215 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:42:16:4216 error: jwt expired
+2023-03-31 12:42:16:4216 http: POST /api/transactions 401 705 - 38.185 ms
+2023-03-31 12:42:28:4228 http: POST /api/login 200 288 - 514.151 ms
+2023-03-31 12:43:00:430 http: POST /api/transactions 201 137 - 15.452 ms
+2023-03-31 12:43:50:4350 info: Connected to database: ttrans
+2023-03-31 12:43:50:4350 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:43:51:4351 http: POST /api/transactions 201 137 - 60.818 ms
+2023-03-31 12:45:58:4558 info: Connected to database: ttrans
+2023-03-31 12:45:58:4558 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:46:22:4622 info: Connected to database: ttrans
+2023-03-31 12:46:22:4622 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:46:32:4632 http: POST /api/transactions 201 137 - 54.749 ms
+2023-03-31 12:47:29:4729 info: Connected to database: ttrans
+2023-03-31 12:47:29:4729 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:47:34:4734 http: POST /api/transactions - - - - ms
+2023-03-31 12:47:56:4756 info: Connected to database: ttrans
+2023-03-31 12:47:56:4756 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:48:08:488 info: Connected to database: ttrans
+2023-03-31 12:48:08:488 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:48:25:4825 info: Connected to database: ttrans
+2023-03-31 12:48:25:4825 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:48:27:4827 http: POST /api/transactions 201 47 - 40.038 ms
+2023-03-31 12:48:45:4845 info: Connected to database: ttrans
+2023-03-31 12:48:45:4845 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:48:51:4851 info: Connected to database: ttrans
+2023-03-31 12:48:51:4851 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:49:11:4911 info: Connected to database: ttrans
+2023-03-31 12:49:11:4911 info: Server ready at: http://localhost:8081/api
+2023-03-31 12:49:14:4914 http: POST /api/transactions 201 135 - 52.847 ms
+2023-03-31 12:54:09:549 info: Connected to database: ttrans
+2023-03-31 12:54:09:549 info: Server ready at: http://localhost:8081/api
+2023-03-31 13:12:15:1215 info: Connected to database: ttrans
+2023-03-31 13:12:15:1215 info: Server ready at: http://localhost:8081/api
+2023-03-31 13:12:16:1216 info: Connected to database: ttrans
+2023-03-31 13:12:16:1216 info: Server ready at: http://localhost:8081/api
+2023-03-31 13:12:21:1221 error: jwt expired
+2023-03-31 13:12:21:1221 http: POST /api/transactions 401 705 - 39.241 ms
+2023-03-31 13:12:34:1234 http: POST /api/login 200 288 - 500.974 ms
+2023-03-31 13:13:02:132 http: POST /api/transactions 400 59 - 17.312 ms
+2023-03-31 13:14:58:1458 info: Connected to database: ttrans
+2023-03-31 13:14:58:1458 info: Server ready at: http://localhost:8081/api
+2023-03-31 13:15:05:155 info: Connected to database: ttrans
+2023-03-31 13:15:05:155 info: Server ready at: http://localhost:8081/api
+2023-03-31 13:17:53:1753 info: Connected to database: ttrans
+2023-03-31 13:17:53:1753 info: Server ready at: http://localhost:8081/api
+2023-03-31 13:19:21:1921 info: Connected to database: ttrans
+2023-03-31 13:19:21:1921 info: Server ready at: http://localhost:8081/api
+2023-03-31 13:20:40:2040 info: Connected to database: ttrans
+2023-03-31 13:20:40:2040 info: Server ready at: http://localhost:8081/api
+2023-03-31 13:21:11:2111 info: Connected to database: ttrans
+2023-03-31 13:21:11:2111 info: Server ready at: http://localhost:8081/api
+2023-03-31 13:21:39:2139 info: Connected to database: ttrans
+2023-03-31 13:21:39:2139 info: Server ready at: http://localhost:8081/api
+2023-03-31 13:21:55:2155 info: Connected to database: ttrans
+2023-03-31 13:21:55:2155 info: Server ready at: http://localhost:8081/api
+2023-03-31 13:22:12:2212 info: Connected to database: ttrans
+2023-03-31 13:22:12:2212 info: Server ready at: http://localhost:8081/api
+2023-03-31 13:22:14:2214 http: POST /api/transactions 400 59 - 57.804 ms
+2023-03-31 13:22:17:2217 http: POST /api/transactions 400 59 - 12.321 ms
+2023-03-31 13:22:55:2255 http: POST /api/transactions 201 137 - 14.203 ms
+2023-03-31 13:26:29:2629 http: POST /api/transactions 201 137 - 69.482 ms
+2023-03-31 13:28:12:2812 info: Connected to database: ttrans
+2023-03-31 13:28:12:2812 info: Server ready at: http://localhost:8081/api
+2023-03-31 13:28:37:2837 info: Connected to database: ttrans
+2023-03-31 13:28:37:2837 info: Server ready at: http://localhost:8081/api
+2023-03-31 13:28:45:2845 info: Connected to database: ttrans
+2023-03-31 13:28:45:2845 info: Server ready at: http://localhost:8081/api
+2023-03-31 13:29:28:2928 info: Connected to database: ttrans
+2023-03-31 13:29:28:2928 info: Server ready at: http://localhost:8081/api
+2023-03-31 13:29:33:2933 error: jwt expired
+2023-03-31 13:29:33:2933 http: POST /api/transactions 401 705 - 35.738 ms
+2023-03-31 13:29:55:2955 error: jwt expired
+2023-03-31 13:29:55:2955 http: POST /api/transactions 401 705 - 5.071 ms
+2023-03-31 13:30:06:306 http: POST /api/login 200 288 - 491.788 ms
+2023-03-31 13:30:25:3025 http: POST /api/transactions 201 137 - 16.125 ms
+2023-03-31 13:30:57:3057 http: POST /api/transactions 201 137 - 14.172 ms
+2023-03-31 13:32:03:323 info: Connected to database: ttrans
+2023-03-31 13:32:03:323 info: Server ready at: http://localhost:8081/api
+2023-03-31 13:32:28:3228 info: Connected to database: ttrans
+2023-03-31 13:32:28:3228 info: Server ready at: http://localhost:8081/api
+2023-03-31 13:32:31:3231 http: POST /api/transactions 201 137 - 60.769 ms
+2023-03-31 13:33:01:331 info: Connected to database: ttrans
+2023-03-31 13:33:01:331 info: Server ready at: http://localhost:8081/api
+2023-03-31 13:33:08:338 info: Connected to database: ttrans
+2023-03-31 13:33:08:338 info: Server ready at: http://localhost:8081/api
+2023-03-31 13:33:24:3324 info: Connected to database: ttrans
+2023-03-31 13:33:24:3324 info: Server ready at: http://localhost:8081/api
+2023-03-31 13:33:33:3333 info: Connected to database: ttrans
+2023-03-31 13:33:33:3333 info: Server ready at: http://localhost:8081/api
+2023-03-31 13:38:31:3831 info: Connected to database: ttrans
+2023-03-31 13:38:31:3831 info: Server ready at: http://localhost:8081/api
+2023-03-31 14:32:32:3232 error: ValidationError: "firstname" is required
+2023-03-31 14:32:32:3232 error: ValidationError: "email" must be a valid email
+2023-03-31 14:32:32:3232 error: User already exists with this email
+2023-03-31 14:32:32:3232 error: ValidationError: "password" is required
+2023-03-31 14:32:32:3232 error: ValidationError: "email" must be a valid email
+2023-03-31 14:32:32:3232 error: Unable to login. Please try again.
+2023-03-31 14:33:22:3322 info: Connected to database: ttrans
+2023-03-31 14:33:22:3322 info: Server ready at: http://localhost:8081/api
+2023-03-31 14:33:31:3331 error: Unable to login. Please try again.
+2023-03-31 14:33:31:3331 http: POST /api/login 422 521 - 45.559 ms
+2023-03-31 14:33:48:3348 info: Connected to database: ttrans
+2023-03-31 14:33:48:3348 info: Server ready at: http://localhost:8081/api
+2023-03-31 14:33:51:3351 error: Unable to login. Please try again.
+2023-03-31 14:33:51:3351 http: POST /api/login 422 521 - 44.707 ms
+2023-03-31 14:35:46:3546 debug: Users seeded!
+2023-03-31 14:35:59:3559 info: Connected to database: ttrans
+2023-03-31 14:35:59:3559 info: Server ready at: http://localhost:8081/api
+2023-03-31 14:36:04:364 http: POST /api/login 200 288 - 500.542 ms
+2023-03-31 14:36:58:3658 http: POST /api/transactions 400 31 - 28.159 ms
+2023-03-31 14:39:36:3936 info: Connected to database: ttrans
+2023-03-31 14:39:36:3936 info: Server ready at: http://localhost:8081/api
+2023-03-31 14:40:26:4026 info: Connected to database: ttrans
+2023-03-31 14:40:26:4026 info: Server ready at: http://localhost:8081/api
+2023-03-31 14:40:51:4051 info: Connected to database: ttrans
+2023-03-31 14:40:51:4051 info: Server ready at: http://localhost:8081/api
+2023-03-31 14:43:33:4333 info: Connected to database: ttrans
+2023-03-31 14:43:33:4333 info: Server ready at: http://localhost:8081/api
+2023-03-31 14:43:45:4345 info: Connected to database: ttrans
+2023-03-31 14:43:45:4345 info: Server ready at: http://localhost:8081/api
+2023-03-31 14:43:55:4355 info: Connected to database: ttrans
+2023-03-31 14:43:55:4355 info: Server ready at: http://localhost:8081/api
+2023-03-31 14:44:26:4426 http: POST /api/transactions 400 31 - 60.180 ms
+2023-03-31 14:46:06:466 info: Connected to database: ttrans
+2023-03-31 14:46:06:466 info: Server ready at: http://localhost:8081/api
+2023-03-31 14:53:07:537 error: jwt expired
+2023-03-31 14:53:07:537 http: POST /api/transactions 401 705 - 39.067 ms
+2023-03-31 14:53:14:5314 http: POST /api/login 200 288 - 485.598 ms
+2023-03-31 14:53:28:5328 http: POST /api/transactions 400 31 - 22.470 ms
+2023-03-31 14:54:16:5416 http: POST /api/transactions 400 31 - 10.557 ms
+2023-03-31 14:54:44:5444 http: POST /api/transactions 500 31 - 18.306 ms
+2023-03-31 14:55:34:5534 info: Connected to database: ttrans
+2023-03-31 14:55:34:5534 info: Server ready at: http://localhost:8081/api
+2023-03-31 14:55:40:5540 info: Connected to database: ttrans
+2023-03-31 14:55:40:5540 info: Server ready at: http://localhost:8081/api
+2023-03-31 14:57:22:5722 info: Connected to database: ttrans
+2023-03-31 14:57:22:5722 info: Server ready at: http://localhost:8081/api
+2023-03-31 14:57:28:5728 http: POST /api/transactions 500 32 - 67.242 ms
+2023-03-31 14:57:56:5756 info: Connected to database: ttrans
+2023-03-31 14:57:56:5756 info: Server ready at: http://localhost:8081/api
+2023-03-31 14:57:58:5758 http: POST /api/transactions 500 32 - 81.073 ms
+2023-03-31 14:58:23:5823 info: Connected to database: ttrans
+2023-03-31 14:58:23:5823 info: Server ready at: http://localhost:8081/api
+2023-03-31 14:58:44:5844 info: Connected to database: ttrans
+2023-03-31 14:58:44:5844 info: Server ready at: http://localhost:8081/api
+2023-03-31 14:58:45:5845 http: POST /api/transactions 500 32 - 86.814 ms
+2023-03-31 14:59:16:5916 info: Connected to database: ttrans
+2023-03-31 14:59:16:5916 info: Server ready at: http://localhost:8081/api
+2023-03-31 14:59:18:5918 http: POST /api/transactions 201 266 - 66.916 ms
+2023-03-31 15:00:48:048 info: Connected to database: ttrans
+2023-03-31 15:00:48:048 info: Server ready at: http://localhost:8081/api
+2023-03-31 15:00:49:049 http: POST /api/transactions 500 32 - 84.620 ms
+2023-03-31 15:00:58:058 info: Connected to database: ttrans
+2023-03-31 15:00:58:058 info: Server ready at: http://localhost:8081/api
+2023-03-31 15:01:01:11 http: POST /api/transactions 500 32 - 97.379 ms
+2023-03-31 15:01:23:123 info: Connected to database: ttrans
+2023-03-31 15:01:23:123 info: Server ready at: http://localhost:8081/api
+2023-03-31 15:02:24:224 info: Connected to database: ttrans
+2023-03-31 15:02:24:224 info: Server ready at: http://localhost:8081/api
+2023-03-31 15:02:55:255 info: Connected to database: ttrans
+2023-03-31 15:02:56:256 info: Server ready at: http://localhost:8081/api
+2023-03-31 15:02:59:259 http: POST /api/transactions 201 265 - 66.401 ms
+2023-03-31 15:08:48:848 info: Connected to database: ttrans
+2023-03-31 15:08:48:848 info: Server ready at: http://localhost:8081/api
+2023-03-31 15:09:03:93 error: jwt expired
+2023-03-31 15:09:03:93 http: POST /api/transactions 401 705 - 41.180 ms
+2023-03-31 15:09:09:99 http: POST /api/login 200 288 - 512.146 ms
+2023-03-31 15:09:32:932 http: POST /api/transactions 201 137 - 25.068 ms
+2023-03-31 15:10:38:1038 info: Connected to database: ttrans
+2023-03-31 15:10:38:1038 info: Server ready at: http://localhost:8081/api
+2023-03-31 15:13:58:1358 info: Connected to database: ttrans
+2023-03-31 15:13:58:1358 info: Server ready at: http://localhost:8081/api
+2023-03-31 17:58:31:5831 info: Connected to database: ttrans
+2023-03-31 17:58:31:5831 info: Server ready at: http://localhost:8081/api
+2023-03-31 17:58:40:5840 info: Connected to database: ttrans
+2023-03-31 17:58:40:5840 info: Server ready at: http://localhost:8081/api
+2023-03-31 17:58:42:5842 http: POST /api/login 200 288 - 516.334 ms
+2023-03-31 18:34:02:342 error: jwt expired
+2023-03-31 18:34:02:342 http: POST /api/transactions 401 705 - 19.201 ms
