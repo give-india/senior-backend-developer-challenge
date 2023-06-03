@@ -32,6 +32,8 @@ The Banking App is a Node.js application built with Express and Mongoose, provid
 
    Make sure you have valid token, as the token expiration is set to 1 hr
 
+   Copy the postman.json file in the root folder and import it as postman collection
+
 
    Technologies Used
     Node.js
