@@ -1,0 +1,92 @@
+[
+  {
+    "_id": "1",
+    "userId": "user1",
+    "type": "Savings",
+    "balance": 1000000
+  },
+  {
+    "_id": "2",
+    "userId": "user1",
+    "type": "Current",
+    "balance": 5000000
+  },
+  {
+    "_id": "3",
+    "userId": "user2",
+    "type": "BasicSavings",
+    "balance": 200000
+  },
+  {
+    "_id": "4",
+    "userId": "user2",
+    "type": "Savings",
+    "balance": 3000000
+  },
+  {
+    "_id": "5",
+    "userId": "user3",
+    "type": "BasicSavings",
+    "balance": 400000
+  },
+  {
+    "_id": "6",
+    "userId": "user3",
+    "type": "Savings",
+    "balance": 1500000
+  },
+  {
+    "_id": "7",
+    "userId": "user4",
+    "type": "Current",
+    "balance": 1000000
+  },
+  {
+    "_id": "8",
+    "userId": "user4",
+    "type": "Savings",
+    "balance": 2000000
+  },
+  {
+    "_id": "9",
+    "userId": "user5",
+    "type": "Savings",
+    "balance": 500000
+  },
+  {
+    "_id": "10",
+    "userId": "user6",
+    "type": "BasicSavings",
+    "balance": 1000000
+  },
+  {
+    "_id": "11",
+    "userId": "user7",
+    "type": "Current",
+    "balance": 2500000
+  },
+  {
+    "_id": "12",
+    "userId": "user8",
+    "type": "Savings",
+    "balance": 200000
+  },
+  {
+    "_id": "13",
+    "userId": "user8",
+    "type": "BasicSavings",
+    "balance": 4500000
+  },
+  {
+    "_id": "14",
+    "userId": "user9",
+    "type": "Savings",
+    "balance": 1000000
+  },
+  {
+    "_id": "15",
+    "userId": "user10",
+    "type": "BasicSavings",
+    "balance": 3000000
+  }
+]
