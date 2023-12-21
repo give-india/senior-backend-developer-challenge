@@ -1,35 +1,46 @@
-## Backend Developer at Give
+to start the server in dev mode run
 
-### Objective
-Write a REST-based API that enables the transfer of money from one bank account to another.
+```bash
+npm run stat:dev
+```
 
-Account types are ‘Savings’, ‘Current’, and ‘BasicSavings’. A single user can have multiple such accounts. The following rules apply:
-* Transfer between accounts belonging to the same user is not allowed.
-* The balance in the ‘BasicSavings’ account type should never exceed Rs. 50,000
-* Source account should have the required amount for the transaction to succeed
+to build run
 
-The API spec follows: (All amounts in the API are in paisa)
+```bash
+npm run build && npm run start
+```
 
-**Input (JSON)**
-* fromAccountId
-* toAccountId
-* amount
+to seed data you can call the POST `/seed` endpoint with below example body
 
-**Output (JSON)**
-success case:
-* newSrcBalance: The balance in the source account after the transfer
-* totalDestBalance: The total balance in all accounts of destination user combined
-* transferedAt: timestamp
+```json
+{
+  "users": [
+    {
+      "accounts": [
+        {
+          "balance": 1000,
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "accounts": [
+        {
+          "balance": 2000,
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}
+```
 
-failure case:
-* errorCode
-* errorMessage
+for transaction call POST `transfer` endpoint with below example body
 
-**Any language, framework, and database would do. Our preference would be Node.js since it is most commonly used across our tech stacks, but it is not mandatory**
-
-### Deliverables
-- Create a fork of this repository
-- Include instructions on how to set it up and run in the README.md
-- Please provide instructions on how to run it in the README.md. Include some sample users/accounts data to test for various scenarios. Around 10 or so sample accounts should suffice to cover the scenarios.
-- Add your resume and other profile / project links
-- Submit a pull request (PR)
+```json
+{
+  "from": 1,
+  "to": 2,
+  "amount": 10
+}
+```
