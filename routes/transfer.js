@@ -30,10 +30,10 @@ async function validateAndProcess(req, res) {
     }
 
     fromAccount.balance -= amount;
-    fromAccount = await req.repo.updateOne("account", fromAccount, { id: fromAccount.id });
+    await req.repo.updateOne("account", fromAccount, { id: fromAccount.id });
 
     toAccount.balance += amount;
-    toAccount = await req.repo.updateOne("account", toAccount, { id: toAccount.id });
+    await req.repo.updateOne("account", toAccount, { id: toAccount.id });
 
     const result = {};
     result.newSrcBalance = fromAccount.balance;
@@ -52,7 +52,7 @@ async function validateAndProcess(req, res) {
 router.post('/', async function(req, res, next) {
   try {
     const transactionData = req.body;
-    let result = validateAndProcess(req, res);
+    let result = await validateAndProcess(req, res);
     if(!result) {
         return;
     }
