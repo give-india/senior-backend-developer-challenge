@@ -3,9 +3,9 @@ const router = express.Router();
 
 async function validateAndProcess(req, res) {
     const data = req.body;
-
+    const { amount, from_account_id, to_account_id } = data; 
     let isValid = true;
-    isValid = !(data.amount <= 0 || !data.from_account_id || !data.to_account_id);
+    isValid = !(amount <= 0 || !from_account_id || !to_account_id);
     let message = (!isValid && "Input data is not valid") || null;
 
     let fromAccount, toAccount; 
@@ -29,7 +29,7 @@ async function validateAndProcess(req, res) {
       message = "Transfer between accounts belonging to the same user is not allowed.";
       //isValid = false;
     }
-    if(fromAccount.balance < data.amount) {
+    if(fromAccount.balance < amount) {
       message = "Source account should have the required amount for the transaction to succeed.";
       //isValid = false;
     }
@@ -45,24 +45,26 @@ async function validateAndProcess(req, res) {
       console.error(message, error);
     }
 
-    try {
-      fromAccount.balance = fromAccount.balance - amount;
-      fromAccount = await req.repo.updateOne("account", fromAccount, { id: fromAccount.id });
-      //res.json({ success: true, message: 'Account updated successfully', data: updatedAccount });
-    } catch (error) {
-      message = 'Failed to update account'+ fromAccount.id;
-      console.error(message, error);
-      res.status(500).json({ success: false, message});
-    }
-    try {
-      toAccount.balance = toAccount.balance + amount;
-      toAccount = await req.repo.updateOne("account", toAccount, { id: toAccount.id });
-      //res.json({ success: true, message: 'Account updated successfully', data: updatedAccount });
-    } catch (error) {
-      message = 'Failed to update account'+ toAccount.id;
-      console.error(message, error);
-      res.status(500).json({ success: false, message});
-      //!! TODO: Needs to handle this issue with rollback using DB Transactional Session. 
+    if(!message) {
+      try {
+        fromAccount.balance = fromAccount.balance - amount;
+        fromAccount = await req.repo.updateOne("account", fromAccount, { id: fromAccount.id });
+        //res.json({ success: true, message: 'Account updated successfully', data: updatedAccount });
+      } catch (error) {
+        message = 'Failed to update account'+ fromAccount.id;
+        console.error(message, error);
+      }
+  
+      if(!message) {
+      try {
+        toAccount.balance = toAccount.balance + amount;
+        toAccount = await req.repo.updateOne("account", toAccount, { id: toAccount.id });
+        //res.json({ success: true, message: 'Account updated successfully', data: updatedAccount });
+      } catch (error) {
+        message = 'Failed to update account'+ toAccount.id;
+        console.error(message, error);
+        //!! TODO: Needs to handle this issue with rollback using DB Transactional Session. 
+      }
     }
 
     if(message) {
