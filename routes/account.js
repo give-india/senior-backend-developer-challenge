@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-// Endpoint for transferring amount to different account
+// Endpoint to create a account
 router.post('/', function(req, res, next) {
   const { fromAccountId, toAccountId, amount } = req.body;
  

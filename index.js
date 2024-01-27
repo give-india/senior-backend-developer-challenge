@@ -8,7 +8,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-// Endpoint for transferring amount to different account
+/* GET App Status. */
 app.get('/', (req, res) => {
   const response = {
     status: "App Running; " + (new Date())
@@ -17,7 +17,10 @@ app.get('/', (req, res) => {
   res.json(response);
 });
 
-var trasnferRouter = require('./routes/transfer');
+let accountRouter = require('./routes/account');
+app.use('/api/account', accountRouter);
+
+let trasnferRouter = require('./routes/transfer');
 app.use('/api/transfer', trasnferRouter);
 
 app.listen(port, () => {
