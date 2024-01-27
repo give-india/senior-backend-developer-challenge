@@ -12,7 +12,8 @@ const repo  = require("./repo");
 console.log("Repo: collections:" + Object.keys(repo.config.collections));
 
 app.use(function(req, res, next) {
-    req.repo = repo;
+    req.repo = repo.repository;
+    console.log("Middleware Created: Added Repo to Req Object.");
     next();
 });
 
@@ -24,6 +25,9 @@ app.get('/', (req, res) => {
   
   res.json(response);
 });
+
+let userRouter = require('./routes/user');
+app.use('/api/user', userRouter);
 
 let accountRouter = require('./routes/account');
 app.use('/api/account', accountRouter);

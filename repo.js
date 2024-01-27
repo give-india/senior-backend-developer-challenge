@@ -44,5 +44,5 @@ const mongoRepo = new mongoSmooth({
         }
     }
 });
-
+console.log("Repo Object Created.");
 module.exports = mongoRepo;
