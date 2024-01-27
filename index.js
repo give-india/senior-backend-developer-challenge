@@ -9,11 +9,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 const mongosmooth = require('mongosmooth');
-const mongoRepo = mongosmooth({
+const mongoRepo = new mongosmooth({
     db: { 
         name: null, // default to "test"
         host: null, // default to "mongodb://localhost:27017/"
-        options: null // default to {useNewUrlParser: true, useUnifiedTopology: true}
+        options: null // default to {}
     },
     collections: {
         "user": {
