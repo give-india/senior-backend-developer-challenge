@@ -2,82 +2,50 @@ const express = require('express');
 const router = express.Router();
 
 async function validateAndProcess(req, res) {
+  try {
     const data = req.body;
     const { amount, from_account_id, to_account_id } = data; 
     let isValid = true;
     isValid = !(amount <= 0 || !from_account_id || !to_account_id);
-    let message = (!isValid && "Input data is not valid") || null;
+    if (!isValid) throw new Error("Input data is not valid");
 
-    let fromAccount, toAccount; 
-    if(isValid) { 
-      try {
-        fromAccount = await req.repo.getById("account", from_account_id);
-        toAccount = await req.repo.getById("account", to_account_id);
-      } catch(error) {
-        message = "Error Fetching Account.";
-        console.error(message, error);
-        //isValid = false;
-      }
+    let fromAccount = await req.repo.getById("account", from_account_id);
+    let toAccount = await req.repo.getById("account", to_account_id);
+    
+    if (!fromAccount || !toAccount || !fromAccount.user_id) {
+      throw new Error("Account Not Found.");
     }
     
-    if(!fromAccount || !toAccount || !fromAccount.user_id ) {
-      // Account not found
-      //isValid = false;
-      message = "Account Not Found.";
+    if (fromAccount.user_id === toAccount.user_id) {
+      throw new Error("Transfer between accounts belonging to the same user is not allowed.");
     }
-    if(fromAccount.user_id === toAccount.user_id) {
-      message = "Transfer between accounts belonging to the same user is not allowed.";
-      //isValid = false;
+    
+    if (fromAccount.balance < amount) {
+      throw new Error("Source account should have the required amount for the transaction to succeed.");
     }
-    if(fromAccount.balance < amount) {
-      message = "Source account should have the required amount for the transaction to succeed.";
-      //isValid = false;
-    }
-    try {
-      let accountType = await req.repo.getById("account_type", toAccount.account_type_id);
-      if((toAccount.balance + amount) > accountType.balance_limit ) {
-        message = "The balance in the ‘"+accountType.type_name+"’ account type should never exceed Rs. " + accountType.balance_limit;
-        //isValid = false;
-      }
-    }
-    catch(error) {
-      message = "Error Fetching Account Type.";
-      console.error(message, error);
+    
+    let accountType = await req.repo.getById("account_type", toAccount.account_type_id);
+    if ((toAccount.balance + amount) > accountType.balance_limit) {
+      throw new Error(`The balance in the ‘${accountType.type_name}’ account type should never exceed Rs. ${accountType.balance_limit}`);
     }
 
-    if(!message) {
-      try {
-        fromAccount.balance = fromAccount.balance - amount;
-        fromAccount = await req.repo.updateOne("account", fromAccount, { id: fromAccount.id });
-        //res.json({ success: true, message: 'Account updated successfully', data: updatedAccount });
-      } catch (error) {
-        message = 'Failed to update account'+ fromAccount.id;
-        console.error(message, error);
-      }
-  
-      if(!message) {
-      try {
-        toAccount.balance = toAccount.balance + amount;
-        toAccount = await req.repo.updateOne("account", toAccount, { id: toAccount.id });
-        //res.json({ success: true, message: 'Account updated successfully', data: updatedAccount });
-      } catch (error) {
-        message = 'Failed to update account'+ toAccount.id;
-        console.error(message, error);
-        //!! TODO: Needs to handle this issue with rollback using DB Transactional Session. 
-      }
-    }
+    fromAccount.balance -= amount;
+    fromAccount = await req.repo.updateOne("account", fromAccount, { id: fromAccount.id });
 
-    if(message) {
-      res.status(500).json({ success: false, message });
-      return null;
-    }
+    toAccount.balance += amount;
+    toAccount = await req.repo.updateOne("account", toAccount, { id: toAccount.id });
 
     const result = {};
     result.newSrcBalance = fromAccount.balance;
     result.totalDestBalance = toAccount.balance;
     result.transferedAt = 0;
-    
+
     return result;
+  } catch (error) {
+    console.error("Error processing transaction:", error);
+    res.status(500).json({ success: false, message: error.message });
+    return null;
+  }
 }
 
 // Create a new transaction
@@ -91,7 +59,7 @@ router.post('/', async function(req, res, next) {
 
     const newTransaction = await req.repo.add("transaction", transactionData);
     result.transferedAt = newTransaction.transfered_at;
-    res.json({ success: true, message: 'Transaction created successfully', data: newTransaction });
+    res.json({ success: true, message: 'Transaction created successfully', data: result });
   } catch (error) {
     console.error("Error creating transaction:", error);
     res.status(500).json({ success: false, message: 'Failed to create transaction' });
