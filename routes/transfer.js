@@ -16,7 +16,7 @@ async function validateAndProcess(req, res) {
       throw new Error("Account Not Found.");
     }
     
-    if (fromAccount.user_id === toAccount.user_id) {
+    if(fromAccount.user_id.equals(toAccount.user_id)) {
       throw new Error("Transfer between accounts belonging to the same user is not allowed.");
     }
     
