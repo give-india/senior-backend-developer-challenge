@@ -5,7 +5,7 @@ var router = express.Router();
 router.post('/', function(req, res, next) {
   const { fromAccountId, toAccountId, amount } = req.body;
  
-  res.json({ success: true, message: 'Transfer successful', data: req.body});
+  res.json({ success: true, message: 'Account Creation Successful', data: req.body});
 
 });
 

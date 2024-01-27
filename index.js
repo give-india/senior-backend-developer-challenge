@@ -8,6 +8,20 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+const mongosmooth = require('mongosmooth');
+const mongoRepo = mongosmooth({
+    db: { 
+        name: null, // default to "test"
+        host: null, // default to "mongodb://localhost:27017/"
+        options: null // default to {useNewUrlParser: true, useUnifiedTopology: true}
+    },
+    collections: {
+        "user": {
+
+        }
+    }
+});
+
 /* GET App Status. */
 app.get('/', (req, res) => {
   const response = {
