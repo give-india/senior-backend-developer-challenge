@@ -29,7 +29,8 @@ const mongoRepo = new mongoSmooth({
         account: {
             account_type_id: { type: mongoose.Schema.Types.ObjectId, ref: 'account_type' },
             user_id: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
-            balance: Number
+            balance: Number,
+            currency: String
         },
         transaction: {
             from_account_id: { type: mongoose.Schema.Types.ObjectId, ref: 'account' },

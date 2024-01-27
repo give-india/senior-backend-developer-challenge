@@ -29,6 +29,9 @@ app.get('/', (req, res) => {
 let userRouter = require('./routes/user');
 app.use('/api/user', userRouter);
 
+let accountTypeRouter = require('./routes/account_type');
+app.use('/api/account_type', accountTypeRouter);
+
 let accountRouter = require('./routes/account');
 app.use('/api/account', accountRouter);
 
