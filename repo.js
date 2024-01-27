@@ -8,6 +8,7 @@ const mongoRepo = new mongoSmooth({
         host: "mongodb://127.0.0.1:27017/", // default to "mongodb://localhost:27017/"
         options: null // default to {}
     },
+    plugin: {transformOutput: true},
     collections: {
         user: {
             first_name: String,
@@ -22,8 +23,8 @@ const mongoRepo = new mongoSmooth({
         },
         account_type: {
             type_name: { type: String, enum: ['Savings', 'Current', 'BasicSavings'] },
-            balance_limit: { type: Number, default: -1 },
-            allowed_services: [{ type: mongoose.Schema.Types.ObjectId, ref: 'service' }]
+            balance_limit: { type: Number, default: -1 }/* ,
+            allowed_services: [{ type: mongoose.Schema.Types.ObjectId, ref: 'service' }] */
         },
         account: {
             account_type_id: { type: mongoose.Schema.Types.ObjectId, ref: 'account_type' },

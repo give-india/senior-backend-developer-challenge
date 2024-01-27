@@ -50,7 +50,7 @@ router.put('/:userId', async function(req, res, next) {
   try {
     const { userId } = req.params;
     const userData = req.body;
-    const updatedUser = await req.repo.updateOne("user", userData, { _id: userId });
+    const updatedUser = await req.repo.updateOne("user", userData, { id: userId });
     res.json({ success: true, message: 'User updated successfully', data: updatedUser });
   } catch (error) {
     console.error("Error updating user:", error);
