@@ -1,0 +1,28 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Bank Transfer",
+    "dateExported": "2024-01-27T04:51:29.122Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "f8e66f95-2dd1-4327-a46f-cab6ce131103",
+            "colId": "94ce9bc5-25af-4845-8b8e-d67084fcc528",
+            "containerId": "",
+            "name": "transfer",
+            "url": "http://localhost:3000/api/transfer",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-01-27T04:49:55.303Z",
+            "modified": "2024-01-27T04:50:54.581Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"fromAccountId\": 123465, \n  \"toAccountId\": 132465, \n  \"amount\": 100\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
