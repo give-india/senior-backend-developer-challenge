@@ -20,7 +20,7 @@ async function validateAndProcess(req, res) {
       }
     }
     
-    if(!fromAccount || !toAccount) {
+    if(!fromAccount || !toAccount || !fromAccount.user_id ) {
       // Account not found
       //isValid = false;
       message = "Account Not Found.";
@@ -33,11 +33,48 @@ async function validateAndProcess(req, res) {
       message = "Source account should have the required amount for the transaction to succeed.";
       //isValid = false;
     }
-    if(!isValid) {
+    try {
+      let accountType = await req.repo.getById("account_type", toAccount.account_type_id);
+      if((toAccount.balance + amount) > accountType.balance_limit ) {
+        message = "The balance in the ‘"+accountType.type_name+"’ account type should never exceed Rs. " + accountType.balance_limit;
+        //isValid = false;
+      }
+    }
+    catch(error) {
+      message = "Error Fetching Account Type.";
+      console.error(message, error);
+    }
+
+    try {
+      fromAccount.balance = fromAccount.balance - amount;
+      fromAccount = await req.repo.updateOne("account", fromAccount, { id: fromAccount.id });
+      //res.json({ success: true, message: 'Account updated successfully', data: updatedAccount });
+    } catch (error) {
+      message = 'Failed to update account'+ fromAccount.id;
+      console.error(message, error);
+      res.status(500).json({ success: false, message});
+    }
+    try {
+      toAccount.balance = toAccount.balance + amount;
+      toAccount = await req.repo.updateOne("account", toAccount, { id: toAccount.id });
+      //res.json({ success: true, message: 'Account updated successfully', data: updatedAccount });
+    } catch (error) {
+      message = 'Failed to update account'+ toAccount.id;
+      console.error(message, error);
+      res.status(500).json({ success: false, message});
+      //!! TODO: Needs to handle this issue with rollback using DB Transactional Session. 
+    }
+
+    if(message) {
       res.status(500).json({ success: false, message });
       return null;
     }
+
     const result = {};
+    result.newSrcBalance = fromAccount.balance;
+    result.totalDestBalance = toAccount.balance;
+    result.transferedAt = 0;
+    
     return result;
 }
 
@@ -51,6 +88,7 @@ router.post('/', async function(req, res, next) {
     }
 
     const newTransaction = await req.repo.add("transaction", transactionData);
+    result.transferedAt = newTransaction.transfered_at;
     res.json({ success: true, message: 'Transaction created successfully', data: newTransaction });
   } catch (error) {
     console.error("Error creating transaction:", error);
