@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "65b53770ceb6a9ae25e05d17"
+  },
+  "type_name": "BasicSavings",
+  "balance_limit": 50000,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b53779ceb6a9ae25e05d19"
+  },
+  "type_name": "Savings",
+  "balance_limit": 1000000,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b53781ceb6a9ae25e05d1b"
+  },
+  "type_name": "Current",
+  "balance_limit": -1,
+  "__v": 0
+}]

@@ -1,0 +1,358 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Bank Transfer",
+    "dateExported": "2024-01-27T19:42:31.946Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "661e668e-42e0-469f-a91d-bccec82f6388",
+            "name": "User",
+            "containerId": "",
+            "created": "2024-01-27T16:19:10.383Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "9d91c1e4-3a84-48d1-a1cc-4702631d45f4",
+            "name": "Account Types",
+            "containerId": "",
+            "created": "2024-01-27T17:00:04.587Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "67fb7649-0838-481f-b29d-9d48d90eb714",
+            "name": "Account",
+            "containerId": "",
+            "created": "2024-01-27T17:08:58.370Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "aa116746-c555-431d-ae4b-f2ecdb498d02",
+            "name": "Transfer",
+            "containerId": "",
+            "created": "2024-01-27T17:30:40.240Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "448b3e9b-0610-4f4b-97d1-0681b6e7048e",
+            "colId": "94ce9bc5-25af-4845-8b8e-d67084fcc528",
+            "containerId": "661e668e-42e0-469f-a91d-bccec82f6388",
+            "name": "User_Create",
+            "url": "http://localhost:3000/api/user",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-01-27T16:18:58.523Z",
+            "modified": "2024-01-27T16:41:56.711Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"first_name\": \"Navi\",\r\n  \"last_name\": \"Prakash\",\r\n  \"status\": \"active\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6fbf4925-4923-4ce3-a8be-4674a9ffff30",
+            "colId": "94ce9bc5-25af-4845-8b8e-d67084fcc528",
+            "containerId": "9d91c1e4-3a84-48d1-a1cc-4702631d45f4",
+            "name": "Create",
+            "url": "http://localhost:3000/api/account_type",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-01-27T17:00:04.587Z",
+            "modified": "2024-01-27T17:04:01.467Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"type_name\": \"Current\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1b585cf3-b29c-4058-abb9-67a77891c43e",
+            "colId": "94ce9bc5-25af-4845-8b8e-d67084fcc528",
+            "containerId": "67fb7649-0838-481f-b29d-9d48d90eb714",
+            "name": "Create",
+            "url": "http://localhost:3000/api/account",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-01-27T17:08:58.370Z",
+            "modified": "2024-01-27T19:27:14.325Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"account_type_id\": \"65b53779ceb6a9ae25e05d19\",\n  \"user_id\": \"65b53240e2d4d174311e3514\",\n  \"balance\": 44444,\n  \"currency\": \"INR\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "13652cda-84b2-4e31-8112-54f9d81afb67",
+            "colId": "94ce9bc5-25af-4845-8b8e-d67084fcc528",
+            "containerId": "aa116746-c555-431d-ae4b-f2ecdb498d02",
+            "name": "Create",
+            "url": "http://localhost:3000/api/transfer",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-01-27T17:30:40.240Z",
+            "modified": "2024-01-27T19:41:00.880Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"from_account_id\": \"65b53b0d26f5f9a902837384\",\n  \"to_account_id\": \"65b55912bc7db657247240c6\",\n  \"amount\": 1000\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c0a4871e-b727-4483-bfd6-8dd754ebf6f8",
+            "colId": "94ce9bc5-25af-4845-8b8e-d67084fcc528",
+            "containerId": "661e668e-42e0-469f-a91d-bccec82f6388",
+            "name": "User_Update",
+            "url": "http://localhost:3000/api/user/65b53240e2d4d174311e3514",
+            "method": "PUT",
+            "sortNum": 15000,
+            "created": "2024-01-27T16:45:18.366Z",
+            "modified": "2024-01-27T16:49:29.999Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"first_name\": \"Prakash\",\n    \"last_name\": \"Subramani\",\n    \"status\": \"disabled\",\n    \"created\": \"2024-01-27T16:41:36.631Z\",\n    \"updated\": \"2024-01-27T16:41:36.632Z\"\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5790389f-ca6a-4d69-ac82-8713c818373a",
+            "colId": "94ce9bc5-25af-4845-8b8e-d67084fcc528",
+            "containerId": "9d91c1e4-3a84-48d1-a1cc-4702631d45f4",
+            "name": "Update",
+            "url": "http://localhost:3000/api/account_type/65b53779ceb6a9ae25e05d19",
+            "method": "PUT",
+            "sortNum": 15000,
+            "created": "2024-01-27T17:00:04.588Z",
+            "modified": "2024-01-27T17:05:56.066Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": " {\n      \"type_name\": \"Savings\",\n      \"balance_limit\": 1000000\n    }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "47e36a14-6a0f-44da-82b3-efe22a177ebd",
+            "colId": "94ce9bc5-25af-4845-8b8e-d67084fcc528",
+            "containerId": "67fb7649-0838-481f-b29d-9d48d90eb714",
+            "name": "Update",
+            "url": "http://localhost:3000/api/account/65b53da32f74f3bdd0acea42",
+            "method": "PUT",
+            "sortNum": 15000,
+            "created": "2024-01-27T17:08:58.371Z",
+            "modified": "2024-01-27T19:09:17.319Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n      \"account_type_id\": \"65b53779ceb6a9ae25e05d19\",\n      \"user_id\": \"65b53240e2d4d174311e3514\",\n      \"balance\": 100950,\n      \"currency\": \"INR\"\n    }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1e47400b-c57d-4be6-8dfe-33f1f7bcd7ca",
+            "colId": "94ce9bc5-25af-4845-8b8e-d67084fcc528",
+            "containerId": "aa116746-c555-431d-ae4b-f2ecdb498d02",
+            "name": "Update",
+            "url": "http://localhost:3000/api/transfer/65b53e8d2f74f3bdd0acea48",
+            "method": "PUT",
+            "sortNum": 15000,
+            "created": "2024-01-27T17:30:40.241Z",
+            "modified": "2024-01-27T17:57:05.088Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"from_account_id\": \"65b53da32f74f3bdd0acea42\",\n  \"to_account_id\": \"65b53b0d26f5f9a902837384\",\n  \"amount\": 500\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4355f7c6-e01b-4170-b078-5115b0b1174d",
+            "colId": "94ce9bc5-25af-4845-8b8e-d67084fcc528",
+            "containerId": "661e668e-42e0-469f-a91d-bccec82f6388",
+            "name": "User_Delete",
+            "url": "http://localhost:3000/api/user/65b52fd3c9305a2d5c5a52a4",
+            "method": "DELETE",
+            "sortNum": 20000,
+            "created": "2024-01-27T16:39:32.621Z",
+            "modified": "2024-01-27T16:40:40.373Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6e56d345-3b4b-4d32-ab83-24e9e0fd9d9a",
+            "colId": "94ce9bc5-25af-4845-8b8e-d67084fcc528",
+            "containerId": "9d91c1e4-3a84-48d1-a1cc-4702631d45f4",
+            "name": "User_Delete",
+            "url": "http://localhost:3000/api/account_type/65b53779ceb6a9ae25e05d19",
+            "method": "DELETE",
+            "sortNum": 20000,
+            "created": "2024-01-27T17:00:04.589Z",
+            "modified": "2024-01-27T17:06:36.729Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ac43dd68-63c9-4d12-b589-e40e3ecc6eec",
+            "colId": "94ce9bc5-25af-4845-8b8e-d67084fcc528",
+            "containerId": "67fb7649-0838-481f-b29d-9d48d90eb714",
+            "name": "User_Delete",
+            "url": "http://localhost:3000/api/account/65b53e682f74f3bdd0acea45",
+            "method": "DELETE",
+            "sortNum": 20000,
+            "created": "2024-01-27T17:08:58.372Z",
+            "modified": "2024-01-27T17:33:44.819Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0df8a34f-22c7-4e23-a387-bf0949a34cc3",
+            "colId": "94ce9bc5-25af-4845-8b8e-d67084fcc528",
+            "containerId": "aa116746-c555-431d-ae4b-f2ecdb498d02",
+            "name": "User_Delete",
+            "url": "http://localhost:3000/api/transfer/65b53e8d2f74f3bdd0acea48",
+            "method": "DELETE",
+            "sortNum": 20000,
+            "created": "2024-01-27T17:30:40.242Z",
+            "modified": "2024-01-27T17:34:55.344Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e7a023b9-bcec-4600-9198-0aab47ac2410",
+            "colId": "94ce9bc5-25af-4845-8b8e-d67084fcc528",
+            "containerId": "661e668e-42e0-469f-a91d-bccec82f6388",
+            "name": "User_Get_All",
+            "url": "http://localhost:3000/api/user",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-01-27T16:43:32.176Z",
+            "modified": "2024-01-27T16:43:58.935Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "36f3d5f5-4671-4990-b520-3b08f9aec06a",
+            "colId": "94ce9bc5-25af-4845-8b8e-d67084fcc528",
+            "containerId": "9d91c1e4-3a84-48d1-a1cc-4702631d45f4",
+            "name": "User_Get_All",
+            "url": "http://localhost:3000/api/account_type",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-01-27T17:00:04.590Z",
+            "modified": "2024-01-27T17:05:16.307Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ccde5d88-ff3d-49bf-8433-bd5eaeae452c",
+            "colId": "94ce9bc5-25af-4845-8b8e-d67084fcc528",
+            "containerId": "67fb7649-0838-481f-b29d-9d48d90eb714",
+            "name": "User_Get_All",
+            "url": "http://localhost:3000/api/account",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-01-27T17:08:58.373Z",
+            "modified": "2024-01-27T17:13:42.586Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a247c8bf-f820-4d97-a48d-2486c7667983",
+            "colId": "94ce9bc5-25af-4845-8b8e-d67084fcc528",
+            "containerId": "aa116746-c555-431d-ae4b-f2ecdb498d02",
+            "name": "User_Get_All",
+            "url": "http://localhost:3000/api/transfer",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-01-27T17:30:40.243Z",
+            "modified": "2024-01-27T17:35:01.734Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "af0c8a61-14e8-4a92-b449-6baa20e58c8c",
+            "colId": "94ce9bc5-25af-4845-8b8e-d67084fcc528",
+            "containerId": "661e668e-42e0-469f-a91d-bccec82f6388",
+            "name": "User_Get_By_ID",
+            "url": "http://localhost:3000/api/user/65b53240e2d4d174311e3514",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-01-27T16:44:14.588Z",
+            "modified": "2024-01-27T16:44:36.457Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0768bffc-01b5-4a69-84cb-17e46d630d53",
+            "colId": "94ce9bc5-25af-4845-8b8e-d67084fcc528",
+            "containerId": "9d91c1e4-3a84-48d1-a1cc-4702631d45f4",
+            "name": "User_Get_By_ID",
+            "url": "http://localhost:3000/api/account_type/65b53779ceb6a9ae25e05d19",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-01-27T17:00:04.591Z",
+            "modified": "2024-01-27T17:06:29.212Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "86e8e266-35d9-4254-a5a1-283604879f11",
+            "colId": "94ce9bc5-25af-4845-8b8e-d67084fcc528",
+            "containerId": "67fb7649-0838-481f-b29d-9d48d90eb714",
+            "name": "User_Get_By_ID",
+            "url": "http://localhost:3000/api/account/65b53b0d26f5f9a902837384",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-01-27T17:08:58.374Z",
+            "modified": "2024-01-27T18:45:28.886Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "00a9bcaa-5ba9-4c85-8dae-32208e01a727",
+            "colId": "94ce9bc5-25af-4845-8b8e-d67084fcc528",
+            "containerId": "aa116746-c555-431d-ae4b-f2ecdb498d02",
+            "name": "User_Get_By_ID",
+            "url": "http://localhost:3000/api/transfer/65b53e8d2f74f3bdd0acea48",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-01-27T17:30:40.244Z",
+            "modified": "2024-01-27T17:35:19.256Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "bank-account",
+  "version": "1.0.0",
+  "description": "a REST-based API that enables the transfer of money from one bank account to another.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "debug": "nodemon --inspect index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s-prakashs/bank-account.git"
+  },
+  "author": "prakashsoftvars@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/s-prakashs/bank-account/issues"
+  },
+  "homepage": "https://github.com/s-prakashs/bank-account#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongosmooth": "^1.0.2",
+    "morgan": "^1.10.0"
+  }
+}
