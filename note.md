@@ -31,8 +31,10 @@
 - amount
 - transfered_at
 - status [ ok, ko]
-- messages [code (0 : success, 300 or more : Error), message]
+- status_code [ 0 : success, 300 or more : Error]
+- messages
 
 ### Services
+( deposit, withdraw, transfer, card, loan, pre-paid-card, wallet, so on )
 - service_id
-- service_name [ deposit, withdraw, transfer, card, loan, pre-paid-card, wallet, so on ]
+- service_name 
