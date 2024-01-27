@@ -6,13 +6,13 @@
 * Node.js
 * Express.JS
 * MongoDB
-* [mongo-repo](https://github.com/s-prakash/mongo-repo) (My Opersource Code)
+* [mongosmooth](https://github.com/s-prakash/mongo-repo) (My Opersource Code)
 
 **Project Steps**
 ```
 npm init
 npm install --save-dev nodemon
-npm install express morgan mongodb mongoose 
+npm install express morgan mongosmooth 
 
 ```
 
