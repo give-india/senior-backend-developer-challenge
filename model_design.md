@@ -1,7 +1,6 @@
 # Entities
 ### User
-- user_id  // sequnace id
-- customer_id // assigned id
+- id  // sequnace id
 - first_ame
 - last_name
 - dob
@@ -13,19 +12,19 @@
 - status [active, disabled, blocked]
 
 ### Account
-- account_id
+- id
 - account_type_id
 - user_id
 - balence
 
 ### AccountType
-- account_type_id
+- id
 - type_name [ Savings, Current, BasicSavings ]
 - balance_limit [ -1 = 'no limit', 50_000] [default: -1]
 - allowed_services [ list of allowed service's id]
 
 ### Transaction
-- transaction_id
+- id
 - from_account_id
 - to_account_id
 - amount
@@ -36,5 +35,5 @@
 
 ### Services
 ( deposit, withdraw, transfer, card, loan, pre-paid-card, wallet, so on )
-- service_id
+- id
 - service_name 
