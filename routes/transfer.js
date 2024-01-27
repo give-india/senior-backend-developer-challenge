@@ -1,10 +1,54 @@
 const express = require('express');
 const router = express.Router();
 
+async function validateAndProcess(req, res) {
+    const data = req.body;
+
+    let isValid = true;
+    isValid = !(data.amount <= 0 || !data.from_account_id || !data.to_account_id);
+    let message = (!isValid && "Input data is not valid") || null;
+
+    let fromAccount, toAccount; 
+    if(isValid) { 
+      try {
+        fromAccount = await req.repo.getById("account", from_account_id);
+        toAccount = await req.repo.getById("account", to_account_id);
+      } catch(error) {
+        message = "Error Fetching Account.";
+        console.error(message, error);
+        //isValid = false;
+      }
+    }
+    
+    if(!fromAccount || !toAccount) {
+      // Account not found
+      //isValid = false;
+      message = "Account Not Found.";
+    }
+    if(fromAccount.user_id === toAccount.user_id) {
+      message = "Transfer between accounts belonging to the same user is not allowed.";
+      //isValid = false;
+    }
+    if(fromAccount.balance < data.amount) {
+      message = "Source account should have the required amount for the transaction to succeed.";
+      //isValid = false;
+    }
+    if(!isValid) {
+      res.status(500).json({ success: false, message });
+      return null;
+    }
+    const result = {};
+    return result;
+}
+
 // Create a new transaction
 router.post('/', async function(req, res, next) {
   try {
     const transactionData = req.body;
+    let result = validateAndProcess(req, res);
+    if(!result) {
+        return;
+    }
 
     const newTransaction = await req.repo.add("transaction", transactionData);
     res.json({ success: true, message: 'Transaction created successfully', data: newTransaction });
