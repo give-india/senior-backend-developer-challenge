@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "65b52ff4c9305a2d5c5a52a6"
+  },
+  "first_name": "Bala",
+  "last_name": "Kumar",
+  "status": "active",
+  "created": {
+    "$date": "2024-01-27T16:31:48.474Z"
+  },
+  "updated": {
+    "$date": "2024-01-27T16:31:48.474Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b53240e2d4d174311e3514"
+  },
+  "first_name": "Prakash",
+  "last_name": "Subramani",
+  "status": "disabled",
+  "created": {
+    "$date": "2024-01-27T16:41:36.631Z"
+  },
+  "updated": {
+    "$date": "2024-01-27T16:41:36.632Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b53254e2d4d174311e3516"
+  },
+  "first_name": "Navi",
+  "last_name": "Prakash",
+  "status": "active",
+  "created": {
+    "$date": "2024-01-27T16:41:56.695Z"
+  },
+  "updated": {
+    "$date": "2024-01-27T16:41:56.696Z"
+  },
+  "__v": 0
+}]

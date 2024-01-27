@@ -6,7 +6,8 @@
 * Node.js
 * Express.JS
 * MongoDB
-* [mongosmooth](https://github.com/s-prakash/mongo-repo) (My Opersource Code)
+* Mongoose
+* [mongosmooth](https://github.com/s-prakash/mongo-repo) (My Opersource Module)
 
 **Project Steps**
 ```
@@ -26,6 +27,7 @@ npm start
 
 
 ### Deliverables
-- Include some sample users/accounts data to test for various scenarios. Around 10 or so sample accounts should suffice to cover the scenarios.
-- Add your resume and other profile / project links
-- Submit a pull request (PR)
+- Included sample users/accounts data to test for various scenarios. 
+Instructions can be found at: test\readme.md
+- Profile links: https://www.linkedin.com/in/sprakashs/
+- Submit a pull request (PR) : OK

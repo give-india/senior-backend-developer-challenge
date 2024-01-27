@@ -1,0 +1,42 @@
+[{
+  "_id": {
+    "$oid": "65b53b0d26f5f9a902837384"
+  },
+  "account_type_id": {
+    "$oid": "65b53770ceb6a9ae25e05d17"
+  },
+  "user_id": {
+    "$oid": "65b52ff4c9305a2d5c5a52a6"
+  },
+  "balance": 8900,
+  "currency": "INR",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b53da32f74f3bdd0acea42"
+  },
+  "account_type_id": {
+    "$oid": "65b53779ceb6a9ae25e05d19"
+  },
+  "user_id": {
+    "$oid": "65b53240e2d4d174311e3514"
+  },
+  "balance": 90950,
+  "currency": "INR",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b55912bc7db657247240c6"
+  },
+  "account_type_id": {
+    "$oid": "65b53779ceb6a9ae25e05d19"
+  },
+  "user_id": {
+    "$oid": "65b53240e2d4d174311e3514"
+  },
+  "balance": 46944,
+  "currency": "INR",
+  "__v": 0
+}]
