@@ -1,0 +1,44 @@
+[
+    {
+        "accountId": "A1",
+        "customerId": "C1",
+        "accountType": "Savings",
+        "balance": 30000000,
+        "isActive": true
+    },
+    {
+        "accountId": "A2",
+        "customerId": "C1",
+        "accountType": "Current",
+        "balance": 0,
+        "isActive": true
+    },
+    {
+        "accountId": "A3",
+        "customerId": "C1",
+        "accountType": "BasicSavings",
+        "balance": 0,
+        "isActive": true
+    },
+    {
+        "accountId": "A4",
+        "customerId": "C2",
+        "accountType": "Savings",
+        "balance": 0,
+        "isActive": true
+    },
+    {
+        "accountId": "A5",
+        "customerId": "C2",
+        "accountType": "Current",
+        "balance": 0,
+        "isActive": true
+    },
+    {
+        "accountId": "A6",
+        "customerId": "C2",
+        "accountType": "BasicSavings",
+        "balance": 0,
+        "isActive": true
+    }
+]

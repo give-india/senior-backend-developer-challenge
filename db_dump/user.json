@@ -1,0 +1,18 @@
+[
+    {
+        "firstName": "U1",
+        "emailId": "u1@gmail.com",
+        "phoneNumber": "1111111111",
+        "password": "$2a$12$GERRMN0QDnsU7V/N5HzFjee0fIYe.LhoAMNJBcB9IOh/CybY3GDy6",
+        "isActive": true,
+        "customerId": "C1"
+    },
+    {
+        "firstName": "U2",
+        "emailId": "u2@gmail.com",
+        "phoneNumber": "22222222222",
+        "password": "$2a$12$GERRMN0QDnsU7V/N5HzFjee0fIYe.LhoAMNJBcB9IOh/CybY3GDy6",
+        "isActive": true,
+        "customerId": "C2"
+    }
+]
